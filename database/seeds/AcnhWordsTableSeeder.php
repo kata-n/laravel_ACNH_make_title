@@ -11,6 +11,9 @@ class AcnhWordsTableSeeder extends Seeder
      */
     public function run()
     {
+      //DBのクリア
+      DB::table('words')->truncate();
+
       $words = [
           $words1 = [
             'word_sentence' => 'たぬき開発の客',
@@ -119,6 +122,84 @@ class AcnhWordsTableSeeder extends Seeder
             'word_right' => '虜',
             'word_left' => '知識欲の',
             'get_method' => 'DIYのレシピを増やそう',
+          ],
+          $words18 = [
+            'word_sentence' => 'ものづくりの愛好家',
+            'word_right' => '愛好家',
+            'word_left' => 'ものづくりの',
+            'get_method' => '暮らしの基本は道具作りから',
+          ],
+          $words19 = [
+            'word_sentence' => 'クラフト系の部員',
+            'word_right' => '部員',
+            'word_left' => 'クラフト系の',
+            'get_method' => '暮らしの基本は道具作りから',
+          ],
+          $words20 = [
+            'word_sentence' => 'イケてるスペシャリスト',
+            'word_right' => 'スペシャリスト',
+            'word_left' => 'イケてる',
+            'get_method' => '暮らしの基本は道具作りから',
+          ],
+          $words21 = [
+            'word_sentence' => '半人前の職人',
+            'word_right' => '職人',
+            'word_left' => '半人前の',
+            'get_method' => '手作り家具で 暮らしを豊かに',
+          ],
+          $words22 = [
+            'word_sentence' => 'オンリーワンの変わり者',
+            'word_right' => '変わり者',
+            'word_left' => 'オンリーワンの',
+            'get_method' => 'リメイクの達人になろう！',
+          ],
+          $words23 = [
+            'word_sentence' => 'オンリーワンの変わり者',
+            'word_right' => 'プロデューサー',
+            'word_left' => '某・',
+            'get_method' => '森のウッドカッター！',
+          ],
+          $words24 = [
+            'word_sentence' => '切れ味のいいソルジャー',
+            'word_right' => 'ソルジャー',
+            'word_left' => '切れ味のいい',
+            'get_method' => '森のウッドカッター！',
+          ],
+          $words25 = [
+            'word_sentence' => 'ヤンチャなお調子者',
+            'word_right' => 'お調子者',
+            'word_left' => 'ヤンチャな',
+            'get_method' => '道具クラッシャー！',
+          ],
+          $words26 = [
+            'word_sentence' => '勢いあまったクラッシャー',
+            'word_right' => 'クラッシャー',
+            'word_left' => '勢いあまった',
+            'get_method' => '道具クラッシャー！',
+          ],
+          $words27 = [
+            'word_sentence' => '暴れん坊なあらくれ者',
+            'word_right' => 'あらくれ者',
+            'word_left' => '暴れん坊な',
+            'get_method' => '道具クラッシャー！',
+          ],
+          $words28 = [
+            'word_sentence' => '加減を知らないデストロイヤー',
+            'word_right' => 'デストロイヤー',
+            'word_left' => '加減を知らない',
+            'get_method' => '道具クラッシャー！',
+          ],
+          $words29 = [
+            'word_sentence' => '体育会系の筋肉',
+            'word_right' => '筋肉',
+            'word_left' => '体育会系の',
+            'get_method' => '岩たたきのプロだなも！',
+          ],
+          $words30 = [
+            'word_sentence' => '発掘された化石',
+            'word_right' => '化石',
+            'word_left' => '発掘された',
+            'get_method' => 'かせき発掘人に認定だなも！',
           ],
         ];
         foreach ($words as $word) {
