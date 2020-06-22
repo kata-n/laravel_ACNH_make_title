@@ -201,6 +201,48 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => '発掘された',
             'get_method' => 'かせき発掘人に認定だなも！',
           ],
+          $words31 = [
+            'word_sentence' => '名もなき何か',
+            'word_right' => '何か',
+            'word_left' => '名もなき',
+            'get_method' => 'なんのかせきかな？！',
+          ],
+          $words32 = [
+            'word_sentence' => '古の真実',
+            'word_right' => '真実',
+            'word_left' => '古の',
+            'get_method' => 'なんのかせきかな？！',
+          ],
+          $words33 = [
+            'word_sentence' => '歴史好きの知識人',
+            'word_right' => '知識人',
+            'word_left' => '歴史好きの',
+            'get_method' => 'なんのかせきかな？！',
+          ],
+          $words34 = [
+            'word_sentence' => '雑食の掃除人',
+            'word_right' => '掃除人',
+            'word_left' => '雑食の',
+            'get_method' => '草むしりボランティア募集',
+          ],
+          $words35 = [
+            'word_sentence' => '草食系の仕掛人',
+            'word_right' => '仕掛人',
+            'word_left' => '草食系の',
+            'get_method' => '草むしりボランティア募集',
+          ],
+          $words35 = [
+            'word_sentence' => 'ボーボーの雑草',
+            'word_right' => '雑草',
+            'word_left' => 'ボーボーの',
+            'get_method' => '草むしりボランティア募集',
+          ],
+          $words36 = [
+            'word_sentence' => 'ワイルドな獣',
+            'word_right' => '獣',
+            'word_left' => 'ワイルドな',
+            'get_method' => '草むしりボランティア募集',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
