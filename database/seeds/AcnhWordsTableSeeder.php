@@ -243,6 +243,12 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => 'ワイルドな',
             'get_method' => '草むしりボランティア募集',
           ],
+          $words37 = [
+            'word_sentence' => '温室育ちの花',
+            'word_right' => '花',
+            'word_left' => '温室育ちの',
+            'get_method' => 'エンジョイ・ガーデニング！',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
