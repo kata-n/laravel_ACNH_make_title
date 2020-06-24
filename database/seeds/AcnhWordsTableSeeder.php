@@ -261,6 +261,18 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => '楽園の',
             'get_method' => 'エンジョイ・ガーデニング！',
           ],
+          $words39 = [
+            'word_sentence' => '粋なはからい',
+            'word_right' => 'はからい',
+            'word_left' => '粋な',
+            'get_method' => '水やりで花のあるくらし',
+          ],
+          $words40 = [
+            'word_sentence' => 'マメな世話好き',
+            'word_right' => '世話好き',
+            'word_left' => 'マメな',
+            'get_method' => '水やりで花のあるくらし',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);

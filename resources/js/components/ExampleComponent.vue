@@ -20,7 +20,7 @@
           return {
             AnchData: {}
           };
-        }
+        },
         mounted() {
             this.$http.get('/get_title')
             .then(response => {this.AnchData = response.data;
