@@ -16,8 +16,15 @@
 
 <script>
     export default {
+        data() {
+          return {
+            AnchData: {}
+          };
+        }
         mounted() {
-            console.log('Component mounted.')
+            this.$http.get('/get_title')
+            .then(response => {this.AnchData = response.data;
+            });
         }
     }
 </script>
