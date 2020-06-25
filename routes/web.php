@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('get_title','TittleMakeController@making')
+Route::get('get_title','TittleMakeController@making');
 
 Auth::routes();
 
