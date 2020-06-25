@@ -9,7 +9,7 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 //axios
-import from 'axios';
+import axios from 'axios'
 Vue.prototype.$http = axios;
 
 /**
