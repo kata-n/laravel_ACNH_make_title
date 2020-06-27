@@ -279,6 +279,84 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => '丁寧な',
             'get_method' => '水やりで花のあるくらし',
           ],
+          $words41 = [
+            'word_sentence' => '世話好きの番長',
+            'word_right' => '番長',
+            'word_left' => '世話好きの',
+            'get_method' => '水やりで花のあるくらし',
+          ],
+          $words42 = [
+            'word_sentence' => '花を愛する大将（女将）',
+            'word_right' => '大将（女将）',
+            'word_left' => '花を愛する',
+            'get_method' => '水やりで花のあるくらし',
+          ],
+          $words43 = [
+            'word_sentence' => '森の番人',
+            'word_right' => '番人',
+            'word_left' => '森の',
+            'get_method' => '島に緑を！植樹チャレンジ！',
+          ],
+          $words44 = [
+            'word_sentence' => '未熟な関係',
+            'word_right' => '関係',
+            'word_left' => '未熟な',
+            'get_method' => 'フルーツ狩りを楽しもう！',
+          ],
+          $words45 = [
+            'word_sentence' => '早熟な実',
+            'word_right' => '実',
+            'word_left' => '早熟な',
+            'get_method' => 'フルーツ狩りを楽しもう！',
+          ],
+          $words45 = [
+            'word_sentence' => '旬の果実',
+            'word_right' => '果実',
+            'word_left' => '旬の',
+            'get_method' => 'フルーツ狩りを楽しもう！',
+          ],
+          $words46 = [
+            'word_sentence' => '双子のかたわれ',
+            'word_right' => 'かたわれ',
+            'word_left' => '双子の',
+            'get_method' => 'フルーツの楽園',
+          ],
+          $words46 = [
+            'word_sentence' => '食べごろの愛され者',
+            'word_right' => '愛され者',
+            'word_left' => '食べごろの',
+            'get_method' => 'フルーツの楽園',
+          ],
+          $words47 = [
+            'word_sentence' => 'ナシよりのナシ',
+            'word_right' => 'ナシ',
+            'word_left' => 'ナシよりの',
+            'get_method' => 'フルーツの楽園',
+          ],
+          $words48 = [
+            'word_sentence' => 'フレッシュな人気者',
+            'word_right' => '人気者',
+            'word_left' => 'フレッシュな',
+            'get_method' => 'フルーツの楽園',
+          ],
+          $words49 = [
+            'word_sentence' => 'からにこもった社会人',
+            'word_right' => '社会人',
+            'word_left' => 'からにこもった',
+            'get_method' => '貝がら拾いの達人！',
+          ],
+          $words50 = [
+            'word_sentence' => '快活な会社員',
+            'word_right' => '会社人',
+            'word_left' => '快活な',
+            'get_method' => '貝がら拾いの達人！',
+          ],
+          $words51 = [
+            'word_sentence' => 'おせっかいなギョーカイ人',
+            'word_right' => 'ギョーカイ人',
+            'word_left' => 'おせっかいな',
+            'get_method' => '貝がら拾いの達人！',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
