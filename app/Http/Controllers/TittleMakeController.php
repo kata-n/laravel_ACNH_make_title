@@ -20,14 +20,16 @@ class TittleMakeController extends Controller
     $twitter = new TwitterOAuth(
         config('services.twitter.client_id'),
         config('services.twitter.client_secret'),
+        config('services.twitter.access_token'),
+        config('services.twitter.access_token_secret')
     );
 
     $params = array(
-      "user_id" => "-1156263936"
+      "status" => $title_word
     );
 
     //API実行
-    $timeline = $twitter->get('statuses/user_timeline', $params);
+    $timeline = $twitter->post('statuses/update', $params);
 
     //JSONに渡す
     return response()->json(['results' => $timeline]);
