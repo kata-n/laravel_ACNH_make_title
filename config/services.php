@@ -37,9 +37,9 @@ return [
     'twitter' => [
         'client_id' => env('TWITTER_CLIENT_ID'),
         'client_secret' => env('TWITTER_CLIENT_SECRET'),
-        'access_token' => env('TWITTER_ACCESS_TOKEN'),
-        'access_token_secret' => env('TWITTER_ACCESS_TOKEN_SECRET'),
-        'redirect' => env('TWITTER_CALLBACK_URL'),
+        'access_token' => env('TWITTER_ACCESS_TOKEN', ''),
+        'access_token_secret' => env('TWITTER_ACCESS_TOKEN_SECRET', ''),
+        'redirect' => env('CALLBACK_URL'),
     ],
 
 ];
