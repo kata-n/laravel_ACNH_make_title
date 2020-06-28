@@ -20,3 +20,9 @@ Route::get('get_title','TittleMakeController@making');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+//アクセストークンを生成するための、Twitterログイン
+Route::get('twitter/login',
+'Auth\TwitterAuthController@redirectToProvider');
+//Twitterコールバック
+Route::get('twitter/callback', 'Auth\TwitterAuthController@handleProviderCallback');
