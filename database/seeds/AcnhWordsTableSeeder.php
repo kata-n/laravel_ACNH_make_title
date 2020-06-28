@@ -357,6 +357,42 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => 'おせっかいな',
             'get_method' => '貝がら拾いの達人！',
           ],
+          $words52 = [
+            'word_sentence' => '潮時の時期',
+            'word_right' => '時期',
+            'word_left' => '潮時の',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words53 = [
+            'word_sentence' => 'アッサリ系の浜っ子',
+            'word_right' => '浜っ子',
+            'word_left' => 'アッサリ系の',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words54 = [
+            'word_sentence' => '埋もれてる天才',
+            'word_right' => '天才',
+            'word_left' => '埋もれてる',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words55 = [
+            'word_sentence' => '掘り出し物の逸材',
+            'word_right' => '逸材',
+            'word_left' => '掘り出し物の',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words56 = [
+            'word_sentence' => '地球に優しいエコロジスト',
+            'word_right' => 'エコロジスト',
+            'word_left' => '地球に優しい',
+            'get_method' => '海や川をキレイにしよう！',
+          ],
+          $words56 = [
+            'word_sentence' => 'もったいない廃棄物',
+            'word_right' => '廃棄物',
+            'word_left' => 'もったいない',
+            'get_method' => '海や川をキレイにしよう！',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
