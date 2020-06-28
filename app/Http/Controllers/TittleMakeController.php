@@ -24,6 +24,7 @@ class TittleMakeController extends Controller
         config('services.twitter.access_token_secret')
     );
 
+    //パラメータ指定
     $params = array(
       "status" => $title_word
     );
