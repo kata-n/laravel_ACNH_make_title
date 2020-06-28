@@ -20,18 +20,16 @@ class TittleMakeController extends Controller
     $twitter = new TwitterOAuth(
         config('services.twitter.client_id'),
         config('services.twitter.client_secret'),
-        config('services.twitter.access_token'),
-        config('services.twitter.access_token_secret')
     );
 
     $params = array(
-      "id" => "1117817",//名古屋
+      "user_id" => "-1156263936"
     );
 
     //API実行
-    $connection = $twitter->get('https://api.twitter.com/1.1/trends/place.json', $params);
+    $timeline = $twitter->get('statuses/user_timeline', $params);
 
     //JSONに渡す
-    return response()->json(['results' => $connection]);
+    return response()->json(['results' => $timeline]);
   }
 }
