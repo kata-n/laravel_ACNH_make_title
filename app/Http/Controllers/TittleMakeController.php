@@ -28,7 +28,8 @@ class TittleMakeController extends Controller
       "id" => "1117817",//名古屋
     );
 
-    $connection = $twitter->('https://api.twitter.com/1.1/trends/place.json', $params);
+    //API実行
+    $connection = $twitter->get('https://api.twitter.com/1.1/trends/place.json', $params);
 
     //JSONに渡す
     return response()->json(['results' => $connection]);
