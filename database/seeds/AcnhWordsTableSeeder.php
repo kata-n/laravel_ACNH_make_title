@@ -357,6 +357,72 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => 'おせっかいな',
             'get_method' => '貝がら拾いの達人！',
           ],
+          $words52 = [
+            'word_sentence' => '潮時の時期',
+            'word_right' => '時期',
+            'word_left' => '潮時の',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words53 = [
+            'word_sentence' => 'アッサリ系の浜っ子',
+            'word_right' => '浜っ子',
+            'word_left' => 'アッサリ系の',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words54 = [
+            'word_sentence' => '埋もれてる天才',
+            'word_right' => '天才',
+            'word_left' => '埋もれてる',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words55 = [
+            'word_sentence' => '掘り出し物の逸材',
+            'word_right' => '逸材',
+            'word_left' => '掘り出し物の',
+            'get_method' => '潮干狩りにチャレンジ！',
+          ],
+          $words56 = [
+            'word_sentence' => '地球に優しいエコロジスト',
+            'word_right' => 'エコロジスト',
+            'word_left' => '地球に優しい',
+            'get_method' => '海や川をキレイにしよう！',
+          ],
+          $words57 = [
+            'word_sentence' => 'もったいない廃棄物',
+            'word_right' => '廃棄物',
+            'word_left' => 'もったいない',
+            'get_method' => '海や川をキレイにしよう！',
+          ],
+          $words58 = [
+            'word_sentence' => '外道のサカナ',
+            'word_right' => 'サカナ',
+            'word_left' => '外道の',
+            'get_method' => '伝説の釣り人になれるかな？',
+          ],
+          $words59 = [
+            'word_sentence' => '入れ食いのフィーバー中',
+            'word_right' => 'フィーバー中',
+            'word_left' => '入れ食いの',
+            'get_method' => '伝説の釣り人になれるかな？',
+          ],
+          $words60 = [
+            'word_sentence' => 'ひとり暮らしの初心者',
+            'word_right' => '初心者',
+            'word_left' => 'ひとり暮らしの',
+            'get_method' => '夢のマイホーム',
+          ],
+          $words61 = [
+            'word_sentence' => '二階から管理人',
+            'word_right' => '管理人',
+            'word_left' => '二階から',
+            'get_method' => '夢のマイホーム',
+          ],
+          $words62 = [
+            'word_sentence' => 'ちょっぴりもようがえ好き',
+            'word_right' => 'もようがえ好き',
+            'word_left' => 'ちょっぴり',
+            'get_method' => 'こだわりのインテリアで充実ライフ',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
