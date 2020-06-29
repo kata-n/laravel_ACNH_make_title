@@ -41,7 +41,6 @@ class TwitterAuthController extends Controller
           $twitter_account = session('twitter');
 
           $twitter_user = new TwitterUser([
-            'user_id' => $res->id,
             'twitter_user_id' => $twitter_account->id,
             'email' => $twitter_account->email,
             'name' => $twitter_account->name,
