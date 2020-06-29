@@ -41,4 +41,5 @@ class TwitterAuthController extends Controller
           session(['twitter' => $data]);
           return redirect('register')->with('flash_message', 'こちらのユーザー登録も行ってください');
         }
+    }
 }
