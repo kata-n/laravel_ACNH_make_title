@@ -41,7 +41,7 @@ class TittleMakeController extends Controller
 
         //API実行
         $results = $twitter->get('search/tweets', $params);
-//
+
 //    //API実行
 //    $timeline = $twitter->post('statuses/update', $params);
 
