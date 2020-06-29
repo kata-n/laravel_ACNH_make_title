@@ -38,7 +38,7 @@ class TwitterAuthController extends Controller
           return redirect('/mainpage')->with('flash_message', 'ログインしました');
         } else {
           //セッション情報をDBへ保存
-          $twitter_account = session('twitter');
+          $twitter_account = Socialite::with('twitter')->user();
 
           $twitter_user = new TwitterUser([
             'twitter_user_id' => $twitter_account->id,
