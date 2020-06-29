@@ -37,9 +37,25 @@ class TwitterAuthController extends Controller
           Auth::login($authUser->user);
           return redirect('/mainpage')->with('flash_message', 'ログインしました');
         } else {
-          //ユーザー登録していない場合は、Twitter情報をセッションに保存し新規会員登録へ遷移する
-          session(['twitter' => $data]);
-          return redirect('register')->with('flash_message', 'こちらのユーザー登録も行ってください');
+          //セッション情報をDBへ保存
+          $twitter_account = session('twitter');
+
+          $twitter_user = new TwitterUser([
+            'user_id' => $res->id,
+            'twitter_user_id' => $twitter_account->id,
+            'email' => $twitter_account->email,
+            'name' => $twitter_account->name,
+            'nickname' => $twitter_account->nickname,
+            'avatar' => $twitter_account->avatar,
+            'token' => $twitter_account->token,
+            'token_secret' => $twitter_account->tokenSecret,
+          ]);
+
+          //DBへ登録
+          $twitter_user->save();
+          session()->forget('twitter');
+
+          return redirect('/')->with('flash_message', '登録しました');
         }
     }
 }
