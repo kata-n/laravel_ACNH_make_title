@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Abraham\TwitterOAuth\TwitterOAuth;
+use Illuminate\Support\Facades\DB;
 use App\Makingtitle;
 
 class TittleMakeController extends Controller
@@ -24,7 +25,6 @@ class TittleMakeController extends Controller
         config('services.twitter.access_token_secret')
     );
 
-    //パラメータ指定
     $params = array(
       "status" => $title_word,
       "trim_user" => false,
@@ -35,5 +35,6 @@ class TittleMakeController extends Controller
 
     //JSONに渡す
     return response()->json(['results' => $timeline]);
+
   }
 }
