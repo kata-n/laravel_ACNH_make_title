@@ -26,8 +26,7 @@ class TittleMakeController extends Controller
     );
 
     $params = array(
-      "status" => $title_word,
-      "trim_user" => false,
+      "status" => $title_word
     );
 
     //API実行
