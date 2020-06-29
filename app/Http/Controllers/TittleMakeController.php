@@ -25,12 +25,10 @@ class TittleMakeController extends Controller
         config('services.twitter.access_token_secret')
     );
 
-    $params = array(
-      "status" => $title_word
-    );
-
     //API実行
-    $timeline = $twitter->post('statuses/update', $params);
+    $timeline = $twitter->post('statuses/update', array(
+    "status" => $title_word)
+    );
 
     //JSONに渡す
     return response()->json(['results' => $timeline]);
