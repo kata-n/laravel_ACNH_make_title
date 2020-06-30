@@ -9,7 +9,7 @@ use App\Makingtitle;
 
 class TittleMakeController extends Controller
 {
-  public function making()
+  public static function making()
   {
     //DBから情報を取得する
     $title_words = Makingtitle::select('word_left','word_right')->inRandomOrder()->first();
