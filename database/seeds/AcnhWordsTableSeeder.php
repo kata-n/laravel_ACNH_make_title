@@ -429,6 +429,18 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => 'わりかし',
             'get_method' => 'こだわりのインテリアで充実ライフ',
           ],
+          $words64 = [
+            'word_sentence' => '余裕のないスタイリスト',
+            'word_right' => 'スタイリスト',
+            'word_left' => '余裕のない',
+            'get_method' => '収納のプロは、暮らしのプロ',
+          ],
+          $words65 = [
+            'word_sentence' => '隠し切れていない才能',
+            'word_right' => '才能',
+            'word_left' => '隠し切れていない',
+            'get_method' => '収納のプロは、暮らしのプロ',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
