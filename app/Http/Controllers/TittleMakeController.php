@@ -34,8 +34,5 @@ class TittleMakeController extends Controller
     //API実行
     $timeline = $twitter->post('statuses/update', $params);
 
-    //JSONに渡す
-    return response()->json(['results' => $results]);
-
   }
 }
