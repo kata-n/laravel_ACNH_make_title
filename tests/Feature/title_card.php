@@ -19,4 +19,14 @@ class title_card extends TestCase
 
         $response->assertStatus(200);
     }
+
+    //title_cardにアクセスした時に、this is cardが表示されるか
+    public function test_view_see_title_card()
+    {
+        $response = $this->get('/title_card');
+
+        $response->assertSee('this is card);
+
+    }
+
 }
