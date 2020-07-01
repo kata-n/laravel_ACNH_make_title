@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //個別ページ
-Route::get('/title_card', 'TitleCardController@index');
+Route::get('/title_card', 'TitleCardController@words_index');
 
 //Teitterログイン
 Route::get('twitter/login', 'Auth\TwitterAuthController@redirectToProvider');

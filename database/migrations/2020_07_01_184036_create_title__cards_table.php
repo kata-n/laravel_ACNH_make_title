@@ -15,6 +15,9 @@ class CreateTitleCardsTable extends Migration
     {
         Schema::create('title__cards', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('maked_word');
+            $table->string('word_right_id');
+            $table->string('word_left_id');
             $table->timestamps();
         });
     }

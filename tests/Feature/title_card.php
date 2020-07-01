@@ -20,12 +20,14 @@ class title_card extends TestCase
         $response->assertStatus(200);
     }
 
-    //title_cardにアクセスした時に、this is cardが表示されるか
+    //title_cardにアクセスした時に、称号の内容が表示されるか
     public function test_view_see_title_card()
     {
-        $response = $this->get('/title_card');
+        $titleCard = factory('App\Title_Card')->create();
 
-        $response->assertSee('this is card);
+        $response = $this->get('/title_car');
+
+        $response->assertSee($titleCard->body);
 
     }
 
