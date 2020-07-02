@@ -8,12 +8,14 @@ use Illuminate\Http\Request;
 class TitleCardController extends Controller
 {
 
-  public function words_index()
+  public function words_index($id)
   {
 
-    $titleCards = Title_Card::Select('maked_word','word_right_id','word_left_id')->get();
+    //対応するIDの情報を取得する
+    $titleCards = Title_Card::find($id);
 
     return view('main_page', compact('titleCards'));
+
 //    return response()->json(['results' => $titleCards]);
 
   }

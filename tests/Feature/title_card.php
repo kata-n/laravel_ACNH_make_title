@@ -25,7 +25,7 @@ class title_card extends TestCase
     {
         $titleCard = factory('App\Title_Card')->create();
 
-        $response = $this->get('/title_car');
+        $response = $this->get('/title_card'.$titleCard->id);
 
         $response->assertSee($titleCard->body);
 

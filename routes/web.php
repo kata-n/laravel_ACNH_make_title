@@ -15,14 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('get_title','TittleMakeController@making');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 //個別ページ
-Route::get('/title_card', 'TitleCardController@words_index');
+Route::get('/title_card/{id}', 'TitleCardController@words_index');
+
+//称号を生成
+Route::get('/get_title','TittleMakeController@making');
 
 //Teitterログイン
 Route::get('twitter/login', 'Auth\TwitterAuthController@redirectToProvider');
