@@ -40,7 +40,7 @@ class TittleMakeController extends Controller
 
     //クエリ設定
     $params = array(
-      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/".$maked_data['id']:,
+      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/".$maked_data['id'],
       "trim_user" => false,
     );
 
