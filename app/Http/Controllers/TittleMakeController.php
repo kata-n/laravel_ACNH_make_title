@@ -6,16 +6,27 @@ use Illuminate\Http\Request;
 use Abraham\TwitterOAuth\TwitterOAuth;
 use Illuminate\Support\Facades\DB;
 use App\Makingtitle;
+use App\Title_Card;
 
 class TittleMakeController extends Controller
 {
   public static function making()
   {
     //DBから情報を取得する
-    $title_words = Makingtitle::select('word_left','word_right')->inRandomOrder()->first();
+    $left_words = Makingtitle::select('id','word_left')->inRandomOrder()->first();
+
+    $right_words = Makingtitle::select('id','word_right')->inRandomOrder()->first();
 
     //文字をつなげる
-    $title_word = $title_words['word_left'].$title_words['word_right'];
+    $title_word = $left_words['word_left'].$right_words['word_right'];
+
+    //生成した称号をDBへ保存する
+    $maiking_title = new Title_Card([
+      'maked_word' => $title_word,
+      'word_right_id' => $right_words->id,
+      'word_left_id' => $left_words->id,
+    ]);
+    $maiking_title->save();
 
     //Twitter情報取得
     $twitter = new TwitterOAuth(

@@ -25,3 +25,11 @@ $factory->define(User::class, function (Faker $faker) {
         'remember_token' => Str::random(10),
     ];
 });
+
+$factory->define(App\Title_Card::class, function (Faker $faker) {
+    return [
+        'maked_word' => $faker->sentence,
+        'word_right_id' => factory('App\User')->create()->id,
+        'word_left_id' => factory('App\User')->create()->id,
+    ];
+});
