@@ -58,9 +58,9 @@ class AcnhWordsTableSeeder extends Seeder
             'get_method' => 'サカナ博士になろう',
           ],
           $words7 = [
-            'word_sentence' => '養殖の熱帯魚',
-            'word_right' => '熱帯魚',
-            'word_left' => '養殖の',
+            'word_sentence' => 'まだまだシャイ',
+            'word_right' => 'シャイ',
+            'word_left' => 'まだまだ',
             'get_method' => '全ての基本はあいさつから！',
           ],
           $words8 = [
@@ -82,7 +82,7 @@ class AcnhWordsTableSeeder extends Seeder
             'get_method' => '昆虫ハンターへの道！',
           ],
           $words11 = [
-            'word_sentence' => '一皮むけそうなサナギ',
+            'word_sentence' => '趣味程度のムシ好き',
             'word_right' => 'ムシ好き',
             'word_left' => '趣味程度の',
             'get_method' => '昆虫博士になれるかな？！',
@@ -452,6 +452,24 @@ class AcnhWordsTableSeeder extends Seeder
             'word_right' => 'コーディネーター',
             'word_left' => '持ってる',
             'get_method' => '収納のプロは、暮らしのプロ',
+          ],
+          $words67 = [
+            'word_sentence' => '自宅のトランスフォーマー',
+            'word_right' => 'トランスフォーマー',
+            'word_left' => '自宅の',
+            'get_method' => 'リフォームで心機一転！',
+          ],
+          $words68 = [
+            'word_sentence' => '親切な一般人',
+            'word_right' => '一般人',
+            'word_left' => '親切な',
+            'get_method' => '親切は大切だなも！',
+          ],
+          $words69 = [
+            'word_sentence' => '頼れる味方',
+            'word_right' => '味方',
+            'word_left' => '頼れる',
+            'get_method' => '親切は大切だなも！',
           ],
         ];
         foreach ($words as $word) {
