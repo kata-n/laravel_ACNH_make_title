@@ -14,7 +14,6 @@ class TittleMakeController extends Controller
   {
     //DBから情報を取得する
     $left_words = Makingtitle::select('id','word_left')->inRandomOrder()->first();
-
     $right_words = Makingtitle::select('id','word_right')->inRandomOrder()->first();
 
     //文字をつなげる
