@@ -14,7 +14,6 @@ class TittleMakeController extends Controller
   {
     //DBから情報を取得する
     $left_words = Makingtitle::select('id','word_left')->inRandomOrder()->first();
-
     $right_words = Makingtitle::select('id','word_right')->inRandomOrder()->first();
 
     //文字をつなげる
@@ -41,7 +40,7 @@ class TittleMakeController extends Controller
 
     //クエリ設定
     $params = array(
-      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_card/".$maked_data['id'],
+      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_card/".$maked_data,
       "trim_user" => false,
     );
 
