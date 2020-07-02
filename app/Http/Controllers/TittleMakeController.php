@@ -28,7 +28,8 @@ class TittleMakeController extends Controller
     ]);
     $maiking_title->save();
 
-    $maked_data = Title_Card::select('id')->first();
+    //インサートしたidを取得
+    $maked_data = $maiking_title->id;
 
     //Twitter情報取得
     $twitter = new TwitterOAuth(
@@ -40,7 +41,7 @@ class TittleMakeController extends Controller
 
     //クエリ設定
     $params = array(
-      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/".$maked_data['id'],
+      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_card/".$maked_data['id'],
       "trim_user" => false,
     );
 
