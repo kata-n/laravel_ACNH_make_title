@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.contents-template')
+
+@section('title','肩書き表示ページ')
+
+@section('description','Twitterで作成した肩書きの入手方法などを表示しています')
 
 @section('content')
     <div>

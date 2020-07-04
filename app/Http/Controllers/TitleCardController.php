@@ -19,7 +19,7 @@ class TitleCardController extends Controller
 
     $left_info = Makingtitle::find($titleCards['word_left_id'],['word_sentence', 'word_left','get_method']);
 
-    return view('main_page', compact('titleCards','right_info','left_info'));
+    return view('main_page/main_page', compact('titleCards','right_info','left_info'));
 
 //    return response()->json(['results' => $titleCards,$right_info,$left_info]);
 
