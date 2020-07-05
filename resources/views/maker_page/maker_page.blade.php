@@ -7,7 +7,7 @@
 @section('content')
   <div class="content">
     <div id="app">
-      <example-component></example-component>
+      <titleshow-component></titleshow-component>
     </div>
   </div>
 @endsection
