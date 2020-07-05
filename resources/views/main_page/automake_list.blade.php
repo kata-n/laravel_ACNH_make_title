@@ -7,6 +7,13 @@
 @section('content')
    <div class="content">
     <div id="app">
+
+      <div id="nav">
+        <router-link to="/">つくる</router-link>
+        <router-link to="/title_cards_list">肩書きリスト</router-link>
+      </div>
+      <router-view/>
+
       <autotitlelist-component></autotitlelist-component>
     </div>
   </div>

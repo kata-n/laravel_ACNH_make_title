@@ -12,6 +12,10 @@ window.Vue = require('vue');
 import axios from 'axios'
 Vue.prototype.$http = axios;
 
+//router
+import router from './settings/router.js'
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -36,5 +40,6 @@ Vue.component('autotitlelist-component', require('./components/AutotitlelistComp
  */
 
 const app = new Vue({
+    router: router,
     el: '#app',
 });

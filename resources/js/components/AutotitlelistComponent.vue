@@ -7,7 +7,7 @@
                 <li v-for="TitleData in TitleDatas">
                 <p>称号名</p>
                 {{ TitleData.maked_word }}
-                <a v-bind:href="'/title_cards/' + TitleData.id">詳細</a>
+                <a v-bind:href="'/title_cards/' + TitleData.id">くわしく</a>
                 </li>
 
                 </div>

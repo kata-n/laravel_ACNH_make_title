@@ -23,6 +23,7 @@
                 </div>
             </div>
         </div>
+        <a href="/title_cards_list">もどる</a>
     </div>
 </template>
 
