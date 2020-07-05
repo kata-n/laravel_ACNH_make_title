@@ -21,7 +21,7 @@ class TitleCardController extends Controller
 
     return view('main_page/main_page', compact('titleCards','right_info','left_info'));
 
-//    return response()->json(['results' => $titleCards,$right_info,$left_info]);
+    //    return response()->json(['results' => $titleCards,$right_info,$left_info]);
 
   }
 }
