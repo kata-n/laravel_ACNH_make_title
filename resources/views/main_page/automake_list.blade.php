@@ -1,11 +1,11 @@
 @extends('layouts.contents-template')
 
-@section('title','肩書き作成ページ')
+@section('title','自動生成肩書き一覧表示')
 
-@section('description','あつ森で設定できる肩書きを作成できるページ')
+@section('description','自動生成した肩書きを一覧で表示するページ')
 
 @section('content')
-  <div class="content">
+   <div class="content">
     <div id="app">
 
       <div id="nav">
@@ -14,7 +14,7 @@
       </div>
       <router-view/>
 
-      <titleshow-component></titleshow-component>
+      <autotitlelist-component></autotitlelist-component>
     </div>
   </div>
 @endsection

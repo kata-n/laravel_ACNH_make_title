@@ -12,6 +12,10 @@ window.Vue = require('vue');
 import axios from 'axios'
 Vue.prototype.$http = axios;
 
+//router
+import router from './settings/router.js'
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -25,6 +29,10 @@ Vue.prototype.$http = axios;
 
 Vue.component('titleshow-component', require('./components/TitleshowComponent.vue').default);
 
+Vue.component('titleautocard-component', require('./components/TitleautocardComponent.vue').default);
+
+Vue.component('autotitlelist-component', require('./components/AutotitlelistComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -32,5 +40,6 @@ Vue.component('titleshow-component', require('./components/TitleshowComponent.vu
  */
 
 const app = new Vue({
+    router: router,
     el: '#app',
 });

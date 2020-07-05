@@ -17,9 +17,17 @@ Route::get('/', function () {
 });
 
 //肩書きを個別事に表示
-Route::get('/title_card/{id}', 'TitleCardController@words_index');
+Route::get('/title_cards/{id}', 'TitleCardController@id_title');
+//個別肩書き情報を取得する
+Route::get('title_cards/id/{id}', 'TitleCardController@words_index');
 
-//称号を自動生成
+//肩書きを一覧で表示
+Route::get('/title_card', 'TitleCardController@words_list');
+Route::get('/title_cards_list', function () {
+    return view('main_page/automake_list');
+});
+
+//肩書きを自動生成
 Route::get('/get_title','TittleMakeController@making');
 
 //Teitterログイン

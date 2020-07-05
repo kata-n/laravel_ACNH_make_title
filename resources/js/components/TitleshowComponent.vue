@@ -8,7 +8,7 @@
                    <p>{{ leftselected.title }}{{ rightselected.title}}</p>
 
                     <select v-model="leftselected">
-                        <option disabled value="">選択して下さい</option>
+                        <option disabled value="">ひだりの肩書きをえらぶ</option>
                         <option v-for="TitleData in TitleDatas"
                            v-bind:value="{
                            title: TitleData.word_left,
@@ -22,7 +22,7 @@
                     <p>{{ leftselected.sentence }}</p>
 
                     <select v-model="rightselected">
-                        <option disabled value="">選択して下さい</option>
+                        <option disabled value="">みぎの肩書きをえらぶ</option>
                         <option v-for="TitleData in TitleDatas"
                            v-bind:value="{
                            title: TitleData.word_right,
@@ -87,7 +87,7 @@
             {
               return this.showfade = true
             }
-            return this.showfade = false
+              return this.showfade = false
             },
             set(val){}
           }
