@@ -25,6 +25,10 @@ Vue.prototype.$http = axios;
 
 Vue.component('titleshow-component', require('./components/TitleshowComponent.vue').default);
 
+Vue.component('titleautocard-component', require('./components/TitleautocardComponent.vue').default);
+
+Vue.component('autotitlelist-component', require('./components/AutotitlelistComponent.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
