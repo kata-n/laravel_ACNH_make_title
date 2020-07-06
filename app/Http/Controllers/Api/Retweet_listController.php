@@ -21,18 +21,29 @@ class Retweet_listController extends Controller
 
       //検索クエリを指定
       $params = array(
-          "q" => "あつ森 min_faves:100 filter:twing",
+          "q" => "あつ森 filter:images",
           "lang" => "ja",
           "locale" => "ja",
-          "count" => "20",
-          "result_type" => "recent",
+          "count" => "5",
+          "result_type" => "popular",
           "include_entities" => "false",
       );
 
       //API実行
       $tweetlists = $twitter->get('search/tweets', $params);
 
-      return response()->json(['results' => $tweetlists]);
+      //無駄な情報を省く
+      $tweetlists = current($tweetlists);
+
+      //ユーザー側,登録済みTwitterIDだけを取り出す
+      $retweetlist = array_column($tweetlists,'id_str');
+
+      //ランダムで一つ選んでリツイートを行う
+      //検索頻度を少なく設定している為、
+      //同じものをリツイートする可能性は低い
+      $key = array_rand( $retweetlist, 1 );
+      $retweet_target = $retweetlist[$key];
+      $result = $twitter->post('statuses/retweet/'.$retweet_target);
 
     }
 }

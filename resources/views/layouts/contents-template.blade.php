@@ -9,8 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="twitter:card" content="summary"/>
-    <meta property="og:url" content="https://application-anch-tittlemaking.shikatana.com/"/>
-    <meta property="og:title" content="Crypto Trend"/>
+    <meta property="og:title" content="あつ森 肩書きメーカー"/>
     <meta property="og:description" content="あつまれどうぶつの森で設定できる「肩書き」を作ったり入手方法を知ることができるよ"/>
     <meta property="og:image" content="{{ asset('images/top_view2.png') }}"/>
 
