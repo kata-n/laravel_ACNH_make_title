@@ -39,8 +39,13 @@ class TittleMakeController extends Controller
     );
 
     //クエリ設定
+//    $params = array(
+//      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_cards/".$maked_data,
+//      "trim_user" => false,
+//    );
+
     $params = array(
-      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_cards/".$maked_data,
+      "status" => $title_word,
       "trim_user" => false,
     );
 

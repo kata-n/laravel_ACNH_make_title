@@ -8,7 +8,7 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 
 class Retweet_listController extends Controller
 {
-    public function retweet()
+    public static function retweet()
     {
       //リツイートを行うツイートを検索する
       //Twitter情報取得
