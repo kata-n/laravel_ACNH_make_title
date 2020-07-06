@@ -5,8 +5,6 @@
                 <div class="card">
                     <div class="card-header">Example Component</div>
 
-                   <p>{{ leftselected.title }}{{ rightselected.title}}</p>
-
                     <select v-model="leftselected">
                         <option disabled value="">ひだりの肩書きをえらぶ</option>
                         <option v-for="TitleData in TitleDatas"

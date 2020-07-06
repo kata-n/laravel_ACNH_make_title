@@ -21,7 +21,7 @@ Route::group(['middleware' => ['api']], function () {
   Route::get('show_title', 'Api\User_Titlemaking_Controller@usermaiking');
 });
 
-//自動リツートを行う
 Route::group(['middleware' => ['api']], function () {
   Route::get('retweet_execution', 'Api\Retweet_listController@retweet');
 });
+
