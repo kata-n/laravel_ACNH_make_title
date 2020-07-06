@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\AutoCommand::class,
+        \App\Console\Commands\AutoRetweetCommand::class,
     ];
 
     /**
@@ -28,6 +29,12 @@ class Kernel extends ConsoleKernel
         ->command('command:title_maiking')
         ->withoutOverlapping()
         ->dailyAt('20:00');
+
+        $schedule
+        ->command('command:auto_retweet')
+        ->withoutOverlapping()
+        ->dailyAt('19:00');
+
     }
 
     /**
