@@ -20,6 +20,7 @@ class AcnhWordsTableSeeder extends Seeder
             'word_right' => '客',
             'word_left' => 'たぬき開発の',
             'get_method' => '島へようこそ！',
+            'get_sentence' => '無人島移住パッケージプランに申し込む',
           ],
           $words2 = [
             'word_sentence' => '卒業したてのボウズ',
