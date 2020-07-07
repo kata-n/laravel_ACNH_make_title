@@ -1,51 +1,50 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <select v-model="leftselected">
-                        <option disabled value="">ひだりの肩書きをえらぶ</option>
-                        <option v-for="TitleData in TitleDatas"
-                           v-bind:value="{
-                           title: TitleData.word_left,
-                           get: TitleData.get_method,
-                           sentence: TitleData.word_sentence
-                           }">
-                            {{ TitleData.word_left }}
-                        </option>
-                    </select>
-                    <p>{{ leftselected.get }}</p>
-                    <p>{{ leftselected.sentence }}</p>
-
-                    <select v-model="rightselected">
-                        <option disabled value="">みぎの肩書きをえらぶ</option>
-                        <option v-for="TitleData in TitleDatas"
-                           v-bind:value="{
-                           title: TitleData.word_right,
-                           get: TitleData.get_method,
-                           sentence: TitleData.word_sentence
-                           }">
-                            {{ TitleData.word_right }}
-                        </option>
-                    </select>
-                    <p>{{ rightselected.get }}</p>
-                    <p>{{ rightselected.sentence }}</p>
-
-                    <div v-show="showfade">
-                      <p>Twitterに投稿しますか？</p>
-                      <h3>作った肩書き</h3>
-                      <p>{{ leftselected.title }}{{ rightselected.title}}</p>
-                      <button @click="tweet" class="btn__twitter">
-                        <i class="fab fa-twitter fa-lg mr-3"></i>ツイートする
-                      </button>
-                    </div>
-
-                </div>
-            </div>
+  <div class="l-makerpage">
+    <div class="l-makerpage__outline">
+      <div class="l-makerpage__select">
+         <div class="l-makerpage__leftarea">
+            <select v-model="leftselected">
+                <option disabled value="">ひだりの肩書きをえらぶ</option>
+                <option v-for="TitleData in TitleDatas"
+                   v-bind:value="{
+                   title: TitleData.word_left,
+                   get: TitleData.get_method,
+                   sentence: TitleData.word_sentence
+                   }">
+                    {{ TitleData.word_left }}
+                </option>
+            </select>
+            <p>もともとの肩書き：{{ leftselected.sentence }}</p>
+            <p>ゲット方法：{{ leftselected.get }}</p>
+         </div>
+         <div class="l-makerpage__rightarea">
+           <select v-model="rightselected">
+                <option disabled value="">みぎの肩書きをえらぶ</option>
+                <option v-for="TitleData in TitleDatas"
+                   v-bind:value="{
+                   title: TitleData.word_right,
+                   get: TitleData.get_method,
+                   sentence: TitleData.word_sentence
+                   }">
+                    {{ TitleData.word_right }}
+                </option>
+            </select>
+           <p>もともとの肩書き：{{ rightselected.sentence }}</p>
+           <p>ゲット方法：{{ rightselected.get }}</p>
+         </div>
+      </div>
+      <duv class="l-makerpage__result">
+        <div v-show="showfade">
+          <p>Twitterに投稿しますか？</p>
+          <h3>作った肩書き</h3>
+          <p>{{ leftselected.title }}{{ rightselected.title}}</p>
+          <button @click="tweet" class="btn__twitter">
+            <i class="fab fa-twitter fa-lg mr-3"></i>ツイートする
+          </button>
         </div>
+      </duv>
     </div>
+  </div>
 </template>
 
 <script>
