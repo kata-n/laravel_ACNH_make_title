@@ -5,7 +5,7 @@
 @section('description','あつ森で設定できる肩書きを作成できるページ')
 
 @section('content')
-  <div class="content">
+  <div class="l-container p-container">
     <div id="app">
 
       <div id="nav">

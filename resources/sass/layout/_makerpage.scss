@@ -1,0 +1,19 @@
+.l {
+  &-makerpage {
+    max-width: $site-width;
+    margin: 0 auto;
+    padding-top: $headerHeight;
+    &__outline {
+      padding: $space_m;
+    }
+    &__select {
+      display: flex;
+      width: 100%;
+    }
+    &__leftarea,
+    &__rightarea {
+      width: 50%;
+      padding: $space_m $space_s;
+    }
+  }
+}

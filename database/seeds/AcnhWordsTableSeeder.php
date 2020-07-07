@@ -580,6 +580,42 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => '一人前の',
             'get_method' => 'お買い求め、ありがとうございます！',
           ],
+          $words88 = [
+            'word_sentence' => '金欠の予備軍',
+            'word_right' => '予備軍',
+            'word_left' => '金欠の',
+            'get_method' => '不用品、買い取ります！',
+          ],
+          $words89 = [
+            'word_sentence' => '自由な生活',
+            'word_right' => '生活',
+            'word_left' => '自由な',
+            'get_method' => '移住費用マイルパック！',
+          ],
+          $words90 = [
+            'word_sentence' => 'コスパ重視の買い物好き',
+            'word_right' => '買い物好き',
+            'word_left' => 'コスパ重視の',
+            'get_method' => 'ショッピングで経済循環だなも',
+          ],
+          $words91 = [
+            'word_sentence' => '節約家のファミリー',
+            'word_right' => 'ファミリー',
+            'word_left' => '節約家の',
+            'get_method' => 'ショッピングで経済循環だなも',
+          ],
+          $words92 = [
+            'word_sentence' => '貪欲な性格',
+            'word_right' => '性格',
+            'word_left' => '貪欲な',
+            'get_method' => 'ショッピングで経済循環だなも',
+          ],
+          $words93 = [
+            'word_sentence' => '週末のカブ主',
+            'word_right' => 'カブ主',
+            'word_left' => '週末の',
+            'get_method' => 'カブ主様へ、ご優待マイル',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
