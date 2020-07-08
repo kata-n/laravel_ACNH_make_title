@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -460,6 +462,7 @@ li {
 .l-makerpage {
   max-width: 980px;
   margin: 0 auto;
+  height: 100vh;
   padding-top: 64px;
 }
 
@@ -479,13 +482,176 @@ li {
   padding: 1rem 0.5rem;
 }
 
+.l-makerpage__section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.l-makerpage__result {
+  padding: 1rem;
+  width: 100%;
+}
+
 .l-cardlistpage {
   max-width: 980px;
   margin: 0 auto;
   padding-top: 64px;
 }
 
+.c-select__wrapper {
+  overflow: hidden;
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.c-select__wrapper select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+.c-select__wrapper select::-ms-expand {
+  display: none;
+}
+
+.c-select__sell {
+  position: relative;
+  border: 1px solid #bbbbbb;
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.c-select__sell::before {
+  position: absolute;
+  top: 1em;
+  right: 0.9em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+  pointer-events: none;
+}
+
+.c-select__sell::after {
+  position: absolute;
+  top: 0;
+  right: 2.5em;
+  bottom: 0;
+  width: 1px;
+  content: "";
+  border-left: 1px solid #bbbbbb;
+}
+
+.c-select__sell select {
+  padding: 8px 38px 8px 8px;
+  color: #447974;
+}
+
+.c-select__sell select:hover {
+  color: #fd166f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.c-twitter__btn {
+  background-color: #00acee;
+  color: #fff;
+  padding: 0.7rem 1.1rem;
+  width: 40%;
+  border: 1px solid #00acee;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 476px) {
+  .c-twitter__btn {
+    width: 80%;
+  }
+}
+
+.c-card__result {
+  padding: 1.2em 0.5em;
+  margin: 2em 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+
+.c-card__top {
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.c-card__title {
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #fd166f;
+}
+
 .p-container {
+  background-image: url(/images/background.png?279fc7cf7b5a05a5549c60faf5f3c801);
+}
+
+.p-makerpage__leftarea,
+.p-makerpage__rightarea {
+  z-index: 10;
+}
+
+.p-makerpage__select {
   background-color: #fdfbf2;
+  position: relative;
+  margin: 2em 0;
+  padding: 2rem;
+  border: solid 1px #777777;
+  z-index: 9;
+}
+
+.p-makerpage__select::before,
+.p-makerpage__select::after {
+  position: absolute;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.p-makerpage__select::before {
+  left: 0;
+  border: solid 1px #777777;
+  -webkit-transform: rotate(-1.2deg);
+          transform: rotate(-1.2deg);
+  z-index: 7;
+  background-color: mintcream;
+}
+
+.p-makerpage__select::after {
+  border: solid 1px #777777;
+  /*線の種類、太さ、色*/
+  -webkit-transform: rotate(0.7deg);
+          transform: rotate(0.7deg);
+  /*ボックスの角度*/
+  z-index: 6;
+  background-color: cornsilk;
+}
+
+.p-makerpage__result {
+  text-align: center;
 }
 

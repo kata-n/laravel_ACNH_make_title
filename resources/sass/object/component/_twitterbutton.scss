@@ -1,0 +1,16 @@
+.c {
+  &-twitter {
+    &__btn {
+      background-color: $TwitterColor;
+      color: $Whitecoloer;
+      padding: $space_ss $space_xm;
+      width: 40%;
+      border: 1px solid $TwitterColor;
+      border-radius: 15px;
+      margin: 0 auto;
+      @include mq(){
+        width: 80%;
+      }
+    }
+  }
+}

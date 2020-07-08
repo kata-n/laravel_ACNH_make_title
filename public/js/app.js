@@ -2064,6 +2064,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2697,161 +2708,163 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "l-makerpage" }, [
-    _c(
-      "div",
-      { staticClass: "l-makerpage__outline" },
-      [
-        _c("div", { staticClass: "l-makerpage__select" }, [
-          _c("div", { staticClass: "l-makerpage__leftarea" }, [
-            _c(
-              "select",
-              {
-                directives: [
+    _c("div", { staticClass: "l-makerpage__outline" }, [
+      _c("div", { staticClass: "l-makerpage__select p-makerpage__select" }, [
+        _c(
+          "div",
+          { staticClass: "l-makerpage__leftarea p-makerpage__leftarea" },
+          [
+            _c("div", { staticClass: "l-makerpage__section" }, [
+              _c("div", { staticClass: "c-select__wrapper c-select__sell" }, [
+                _c(
+                  "select",
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.leftselected,
-                    expression: "leftselected"
-                  }
-                ],
-                on: {
-                  change: function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.leftselected = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  }
-                }
-              },
-              [
-                _c("option", { attrs: { disabled: "", value: "" } }, [
-                  _vm._v("ひだりの肩書きをえらぶ")
-                ]),
-                _vm._v(" "),
-                _vm._l(_vm.TitleDatas, function(TitleData) {
-                  return _c(
-                    "option",
-                    {
-                      domProps: {
-                        value: {
-                          title: TitleData.word_left,
-                          get: TitleData.get_method,
-                          sentence: TitleData.word_sentence
-                        }
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.leftselected,
+                        expression: "leftselected"
                       }
-                    },
-                    [
-                      _vm._v(
-                        "\n                  " +
-                          _vm._s(TitleData.word_left) +
-                          "\n              "
-                      )
-                    ]
-                  )
-                })
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("もともとの肩書き：" + _vm._s(_vm.leftselected.sentence))
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("ゲット方法:" + _vm._s(_vm.leftselected.get))])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "l-makerpage__rightarea" }, [
-            _c(
-              "select",
-              {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.rightselected,
-                    expression: "rightselected"
-                  }
-                ],
-                on: {
-                  change: function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.rightselected = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  }
-                }
-              },
-              [
-                _c("option", { attrs: { disabled: "", value: "" } }, [
-                  _vm._v("みぎの肩書きをえらぶ")
-                ]),
-                _vm._v(" "),
-                _vm._l(_vm.TitleDatas, function(TitleData) {
-                  return _c(
-                    "option",
-                    {
-                      domProps: {
-                        value: {
-                          title: TitleData.word_right,
-                          get: TitleData.get_method,
-                          sentence: TitleData.word_sentence
-                        }
+                    ],
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.leftselected = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
                       }
-                    },
-                    [
-                      _vm._v(
-                        "\n                  " +
-                          _vm._s(TitleData.word_right) +
-                          "\n              "
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { disabled: "", value: "" } }, [
+                      _vm._v("ひだりの肩書きをえらぶ")
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.TitleDatas, function(TitleData) {
+                      return _c(
+                        "option",
+                        {
+                          domProps: {
+                            value: {
+                              title: TitleData.word_left,
+                              get: TitleData.get_method,
+                              sentence: TitleData.word_sentence
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                    " +
+                              _vm._s(TitleData.word_left) +
+                              "\n                "
+                          )
+                        ]
                       )
-                    ]
-                  )
-                })
-              ],
-              2
-            ),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("もともとの肩書き" + _vm._s(_vm.rightselected.sentence))
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("ゲット方法:" + _vm._s(_vm.rightselected.get))])
-          ])
-        ]),
+                    })
+                  ],
+                  2
+                )
+              ])
+            ])
+          ]
+        ),
         _vm._v(" "),
-        _c("duv", { staticClass: "l-makerpage__result" }, [
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.showfade,
-                  expression: "showfade"
-                }
-              ]
-            },
-            [
-              _c("p", [_vm._v("Twitterに投稿しますか？")]),
+        _c(
+          "div",
+          { staticClass: "l-makerpage__rightarea p-makerpage__rightarea" },
+          [
+            _c("div", { staticClass: "l-makerpage__section" }, [
+              _c("div", { staticClass: "c-select__wrapper c-select__sell" }, [
+                _c(
+                  "select",
+                  {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.rightselected,
+                        expression: "rightselected"
+                      }
+                    ],
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.rightselected = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  [
+                    _c("option", { attrs: { disabled: "", value: "" } }, [
+                      _vm._v("みぎの肩書きをえらぶ")
+                    ]),
+                    _vm._v(" "),
+                    _vm._l(_vm.TitleDatas, function(TitleData) {
+                      return _c(
+                        "option",
+                        {
+                          domProps: {
+                            value: {
+                              title: TitleData.word_right,
+                              get: TitleData.get_method,
+                              sentence: TitleData.word_sentence
+                            }
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n                      " +
+                              _vm._s(TitleData.word_right) +
+                              "\n                  "
+                          )
+                        ]
+                      )
+                    })
+                  ],
+                  2
+                )
+              ])
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "l-makerpage__result p-makerpage__result" }, [
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showfade,
+                expression: "showfade"
+              }
+            ]
+          },
+          [
+            _c("div", { staticClass: "c-card__result" }, [
+              _c("h4", { staticClass: "c-card__top" }, [
+                _vm._v("作成した肩書き")
+              ]),
               _vm._v(" "),
-              _c("h3", [_vm._v("作った肩書き")]),
-              _vm._v(" "),
-              _c("p", [
+              _c("p", { staticClass: "c-card__title" }, [
                 _vm._v(
                   _vm._s(_vm.leftselected.title) +
                     _vm._s(_vm.rightselected.title)
@@ -2860,18 +2873,36 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "button",
-                { staticClass: "btn__twitter", on: { click: _vm.tweet } },
+                {
+                  staticClass: "c-btn c-twitter__btn",
+                  on: { click: _vm.tweet }
+                },
                 [
-                  _c("i", { staticClass: "fab fa-twitter fa-lg mr-3" }),
-                  _vm._v("ツイートする\n        ")
+                  _c("i", { staticClass: "fab fa-twitter" }),
+                  _vm._v("ツイートする\n          ")
                 ]
               )
-            ]
-          )
-        ])
-      ],
-      1
-    )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "c-card__resultinfo" }, [
+              _c("p", [
+                _vm._v(
+                  "もともとの肩書き：" + _vm._s(_vm.rightselected.sentence)
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("もともとの肩書き：" + _vm._s(_vm.leftselected.sentence))
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))])
+            ])
+          ]
+        )
+      ])
+    ])
   ])
 }
 var staticRenderFns = []

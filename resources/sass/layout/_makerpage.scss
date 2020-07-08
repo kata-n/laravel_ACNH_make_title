@@ -2,6 +2,7 @@
   &-makerpage {
     max-width: $site-width;
     margin: 0 auto;
+    height: 100vh;
     padding-top: $headerHeight;
     &__outline {
       padding: $space_m;
@@ -14,6 +15,14 @@
     &__rightarea {
       width: 50%;
       padding: $space_m $space_s;
+    }
+    &__section {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__result {
+      padding: $space_m;
+      width: 100%;
     }
   }
 }

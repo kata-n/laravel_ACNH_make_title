@@ -5,7 +5,7 @@
 @section('description','自動生成した肩書きを一覧で表示するページ')
 
 @section('content')
-   <div class="content">
+   <div class="l-container p-container">
     <div id="app">
 
       <div id="nav">

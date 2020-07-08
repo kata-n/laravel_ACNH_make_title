@@ -1,0 +1,40 @@
+.p {
+  &-makerpage {
+    &__leftarea,
+    &__rightarea {
+      z-index: 10;
+    }
+    &__select {
+      background-color: $MakeCardColor;
+      position: relative;
+      margin: 2em 0;
+      padding: $space_xl;
+      border: solid 1px #777777;
+      z-index: 9;
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        content:'';
+        width: 100%;
+        height: 100%;
+      }
+      &::before {
+        left:0;
+        border: solid 1px #777777;
+        transform: rotate(-1.2deg);
+        z-index: 7;
+        background-color: mintcream;
+      }
+      &::after {
+        border: solid 1px #777777;/*線の種類、太さ、色*/
+        transform: rotate(0.7deg);/*ボックスの角度*/
+        z-index: 6;
+        background-color: cornsilk;
+      }
+    }
+    &__result {
+      text-align: center;
+    }
+  }
+}
