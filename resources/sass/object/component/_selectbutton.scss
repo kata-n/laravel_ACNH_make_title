@@ -1,0 +1,63 @@
+.c {
+  &-select__wrapper {
+    overflow: hidden;
+    width: 90%;
+    margin: $space_m auto;
+    text-align: center;
+    & select {
+      width: 100%;
+      padding-right: 1em;
+      cursor: pointer;
+      text-indent: 0.01px;
+      text-overflow: ellipsis;
+      border: none;
+      outline: none;
+      background: transparent;
+      background-image: none;
+      box-shadow: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    & select::-ms-expand {
+      display: none;
+    }
+  }
+  &-select__sell {
+    position: relative;
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+    background: #ffffff;
+  }
+  &-select__sell {
+    &::before {
+      position: absolute;
+      top: 1em;
+      right: 0.9em;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: '';
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #666666;
+      pointer-events: none;
+      }
+  }
+  &-select__sell::after {
+    position: absolute;
+    top: 0;
+    right: 2.5em;
+    bottom: 0;
+    width: 1px;
+    content: '';
+    border-left: 1px solid #bbbbbb;
+  }
+  &-select__sell select {
+    padding: 8px 38px 8px 8px;
+    color: $Selectfontcolor;
+    &:hover {
+      color:$Selectarrow;
+      transition: .5s;
+    }
+  }
+}

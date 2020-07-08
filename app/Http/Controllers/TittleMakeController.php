@@ -45,7 +45,7 @@ class TittleMakeController extends Controller
 //    );
 
     $params = array(
-      "status" => "今日の肩書き：".$title_word."       #どうぶつの森 #あつ森肩書きチャレンジ",
+      "status" => "今日の肩書き：".$title_word."              #どうぶつの森 #あつ森肩書きチャレンジ",
       "trim_user" => false,
     );
 

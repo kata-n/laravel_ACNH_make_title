@@ -1,48 +1,59 @@
 <template>
   <div class="l-makerpage">
     <div class="l-makerpage__outline">
-      <div class="l-makerpage__select">
-         <div class="l-makerpage__leftarea">
-            <select v-model="leftselected">
-                <option disabled value="">ひだりの肩書きをえらぶ</option>
-                <option v-for="TitleData in TitleDatas"
-                   v-bind:value="{
-                   title: TitleData.word_left,
-                   get: TitleData.get_method,
-                   sentence: TitleData.word_sentence
-                   }">
-                    {{ TitleData.word_left }}
-                </option>
-            </select>
-            <p>もともとの肩書き：{{ leftselected.sentence }}</p>
-            <p>ゲット方法：{{ leftselected.get }}</p>
+      <div class="l-makerpage__select p-makerpage__select">
+         <div class="l-makerpage__leftarea p-makerpage__leftarea">
+           <div class="l-makerpage__section">
+             <div class="c-select__wrapper c-select__sell">
+                <select v-model="leftselected">
+                  <option disabled value="">ひだりの肩書きをえらぶ</option>
+                  <option v-for="TitleData in TitleDatas"
+                     v-bind:value="{
+                     title: TitleData.word_left,
+                     get: TitleData.get_method,
+                     sentence: TitleData.word_sentence
+                     }">
+                      {{ TitleData.word_left }}
+                  </option>
+                </select>
+             </div>
+           </div>
          </div>
-         <div class="l-makerpage__rightarea">
-           <select v-model="rightselected">
-                <option disabled value="">みぎの肩書きをえらぶ</option>
-                <option v-for="TitleData in TitleDatas"
-                   v-bind:value="{
-                   title: TitleData.word_right,
-                   get: TitleData.get_method,
-                   sentence: TitleData.word_sentence
-                   }">
-                    {{ TitleData.word_right }}
-                </option>
-            </select>
-           <p>もともとの肩書き：{{ rightselected.sentence }}</p>
-           <p>ゲット方法：{{ rightselected.get }}</p>
+         <div class="l-makerpage__rightarea p-makerpage__rightarea">
+           <div class="l-makerpage__section">
+              <div class="c-select__wrapper c-select__sell">
+                 <select v-model="rightselected">
+                    <option disabled value="">みぎの肩書きをえらぶ</option>
+                    <option v-for="TitleData in TitleDatas"
+                       v-bind:value="{
+                       title: TitleData.word_right,
+                       get: TitleData.get_method,
+                       sentence: TitleData.word_sentence
+                       }">
+                        {{ TitleData.word_right }}
+                    </option>
+                 </select>
+              </div>
+            </div>
          </div>
       </div>
-      <duv class="l-makerpage__result">
+      <div class="l-makerpage__result p-makerpage__result">
         <div v-show="showfade">
-          <p>Twitterに投稿しますか？</p>
-          <h3>作った肩書き</h3>
-          <p>{{ leftselected.title }}{{ rightselected.title}}</p>
-          <button @click="tweet" class="btn__twitter">
-            <i class="fab fa-twitter fa-lg mr-3"></i>ツイートする
-          </button>
+          <div class="c-card__result">
+            <h4 class="c-card__top">作成した肩書き</h4>
+            <p class="c-card__title">{{ leftselected.title }}{{ rightselected.title}}</p>
+            <button @click="tweet" class="c-btn c-twitter__btn">
+              <i class="fab fa-twitter"></i>ツイートする
+            </button>
+          </div>
+          <div class="c-card__resultinfo">
+            <p>もともとの肩書き：{{ rightselected.sentence }}</p>
+            <p>ゲット方法：{{ rightselected.get }}</p>
+            <p>もともとの肩書き：{{ leftselected.sentence }}</p>
+            <p>ゲット方法：{{ leftselected.get }}</p>
+          </div>
         </div>
-      </duv>
+      </div>
     </div>
   </div>
 </template>
