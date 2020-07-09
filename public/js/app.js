@@ -1926,6 +1926,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2015,6 +2016,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2758,7 +2770,7 @@ var render = function() {
                   },
                   [
                     _c("option", { attrs: { disabled: "", value: "" } }, [
-                      _vm._v("ひだりの肩書きをえらぶ")
+                      _vm._v("ひだり側の肩書きをえらぶ")
                     ]),
                     _vm._v(" "),
                     _vm._l(_vm.TitleDatas, function(TitleData) {
@@ -2825,7 +2837,7 @@ var render = function() {
                   },
                   [
                     _c("option", { attrs: { disabled: "", value: "" } }, [
-                      _vm._v("みぎの肩書きをえらぶ")
+                      _vm._v("みぎ側の肩書きをえらぶ")
                     ]),
                     _vm._v(" "),
                     _vm._l(_vm.TitleDatas, function(TitleData) {
@@ -2898,26 +2910,36 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "c-card__resultinfo" }, [
-              _c("div", { staticClass: "c-card__rightinfo" }, [
-                _c("p", [
-                  _vm._v(
-                    "もともとの肩書き：" + _vm._s(_vm.rightselected.sentence)
-                  )
-                ]),
+              _c("div", { staticClass: "c-card__leftinfo" }, [
+                _vm._m(1),
                 _vm._v(" "),
-                _c("p", [
-                  _vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))
+                _c("div", { staticClass: "c-card__body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "もともとの肩書き：" + _vm._s(_vm.leftselected.sentence)
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))
+                  ])
                 ])
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "c-card__leftinfo" }, [
-                _c("p", [
-                  _vm._v(
-                    "もともとの肩書き：" + _vm._s(_vm.leftselected.sentence)
-                  )
-                ]),
+              _c("div", { staticClass: "c-card__rightinfo" }, [
+                _vm._m(2),
                 _vm._v(" "),
-                _c("p", [_vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))])
+                _c("div", { staticClass: "c-card__body" }, [
+                  _c("p", [
+                    _vm._v(
+                      "もともとの肩書き：" + _vm._s(_vm.rightselected.sentence)
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [
+                    _vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))
+                  ])
+                ])
               ])
             ])
           ]
@@ -2942,6 +2964,22 @@ var staticRenderFns = [
         ])
       ]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "c-card__lefthead" }, [
+      _c("p", [_vm._v("ひだり側")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "c-card__righthead" }, [
+      _c("p", [_vm._v("みぎ側")])
+    ])
   }
 ]
 render._withStripped = true

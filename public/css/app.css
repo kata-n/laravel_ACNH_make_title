@@ -462,7 +462,7 @@ li {
 .l-makerpage {
   max-width: 980px;
   margin: 0 auto;
-  height: 100vh;
+  height: 150vh;
   padding-top: 64px;
 }
 
@@ -609,6 +609,67 @@ li {
   display: -webkit-box;
   display: flex;
   width: 100%;
+  margin-top: 4rem;
+}
+
+.c-card__rightinfo,
+.c-card__leftinfo {
+  width: 50%;
+  margin-bottom: 0.9rem;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px #ccc;
+  margin: 0.5rem;
+  padding: 0 0 1.2rem 0;
+}
+
+.c-card__lefthead,
+.c-card__righthead {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.c-card__righthead::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -270%;
+  border-radius: 6px;
+  left: 0;
+  background-color: #23b93c;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: skewY(40deg);
+          transform: skewY(40deg);
+  z-index: -1;
+}
+
+.c-card__lefthead::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -270%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #23b93c;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skewY(40deg);
+          transform: skewY(40deg);
+  z-index: -1;
+}
+
+.c-card__body {
+  padding: 1rem;
+}
+
+.c-card__body p {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 .c-balloon__title {
@@ -655,6 +716,7 @@ li {
   display: inline-block;
   margin-left: 0.5rem;
   font-size: 1.4rem;
+  letter-spacing: 2px;
   vertical-align: middle;
 }
 
