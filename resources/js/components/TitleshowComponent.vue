@@ -1,12 +1,19 @@
 <template>
   <div class="l-makerpage">
     <div class="l-makerpage__outline">
+      <div class="l-makerpage__toptitle p-makerpage__toptitle">
+        <div class="c-balloon__title">
+          <div class="c-balloon__sentence">
+            <p>の称号を使って、肩書きを作ってみよう！</p>
+          </div>
+        </div>
+      </div>
       <div class="l-makerpage__select p-makerpage__select">
          <div class="l-makerpage__leftarea p-makerpage__leftarea">
            <div class="l-makerpage__section">
              <div class="c-select__wrapper c-select__sell">
                 <select v-model="leftselected">
-                  <option disabled value="">ひだりの肩書きをえらぶ</option>
+                  <option disabled value="">ひだり側の肩書きをえらぶ</option>
                   <option v-for="TitleData in TitleDatas"
                      v-bind:value="{
                      title: TitleData.word_left,
@@ -23,7 +30,7 @@
            <div class="l-makerpage__section">
               <div class="c-select__wrapper c-select__sell">
                  <select v-model="rightselected">
-                    <option disabled value="">みぎの肩書きをえらぶ</option>
+                    <option disabled value="">みぎ側の肩書きをえらぶ</option>
                     <option v-for="TitleData in TitleDatas"
                        v-bind:value="{
                        title: TitleData.word_right,
@@ -47,10 +54,14 @@
             </button>
           </div>
           <div class="c-card__resultinfo">
+           <div class="c-card__rightinfo">
             <p>もともとの肩書き：{{ rightselected.sentence }}</p>
             <p>ゲット方法：{{ rightselected.get }}</p>
+           </div>
+           <div class="c-card__leftinfo">
             <p>もともとの肩書き：{{ leftselected.sentence }}</p>
             <p>ゲット方法：{{ leftselected.get }}</p>
+           </div>
           </div>
         </div>
       </div>
