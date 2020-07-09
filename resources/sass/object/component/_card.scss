@@ -19,5 +19,9 @@
       letter-spacing: $letter-spacing;
       color: $ResultColor;
     }
+    &__resultinfo {
+      display: flex;
+      width: 100%;
+    }
   }
 }

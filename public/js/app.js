@@ -2075,6 +2075,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2709,6 +2720,8 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "l-makerpage" }, [
     _c("div", { staticClass: "l-makerpage__outline" }, [
+      _vm._m(0),
+      _vm._v(" "),
       _c("div", { staticClass: "l-makerpage__select p-makerpage__select" }, [
         _c(
           "div",
@@ -2885,19 +2898,27 @@ var render = function() {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "c-card__resultinfo" }, [
-              _c("p", [
-                _vm._v(
-                  "もともとの肩書き：" + _vm._s(_vm.rightselected.sentence)
-                )
+              _c("div", { staticClass: "c-card__rightinfo" }, [
+                _c("p", [
+                  _vm._v(
+                    "もともとの肩書き：" + _vm._s(_vm.rightselected.sentence)
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))
+                ])
               ]),
               _vm._v(" "),
-              _c("p", [_vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("もともとの肩書き：" + _vm._s(_vm.leftselected.sentence))
-              ]),
-              _vm._v(" "),
-              _c("p", [_vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))])
+              _c("div", { staticClass: "c-card__leftinfo" }, [
+                _c("p", [
+                  _vm._v(
+                    "もともとの肩書き：" + _vm._s(_vm.leftselected.sentence)
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))])
+              ])
             ])
           ]
         )
@@ -2905,7 +2926,24 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "l-makerpage__toptitle p-makerpage__toptitle" },
+      [
+        _c("div", { staticClass: "c-balloon__title" }, [
+          _c("div", { staticClass: "c-balloon__sentence" }, [
+            _c("p", [_vm._v("の称号を使って、肩書きを作ってみよう！")])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
