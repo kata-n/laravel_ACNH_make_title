@@ -54,18 +54,29 @@
             </button>
           </div>
           <div class="c-card__resultinfo">
-           <div class="c-card__rightinfo">
-            <p>もともとの肩書き：{{ rightselected.sentence }}</p>
-            <p>ゲット方法：{{ rightselected.get }}</p>
-           </div>
            <div class="c-card__leftinfo">
-            <p>もともとの肩書き：{{ leftselected.sentence }}</p>
-            <p>ゲット方法：{{ leftselected.get }}</p>
+             <div class="c-card__lefthead">
+               <p>ひだり側</p>
+             </div>
+             <div class="c-card__body">
+               <p>もともとの肩書き：{{ leftselected.sentence }}</p>
+               <p>ゲット方法：{{ leftselected.get }}</p>
+             </div>
+           </div>
+           <div class="c-card__rightinfo">
+             <div class="c-card__righthead">
+               <p>みぎ側</p>
+             </div>
+             <div class="c-card__body">
+               <p>もともとの肩書き：{{ rightselected.sentence }}</p>
+               <p>ゲット方法：{{ rightselected.get }}</p>
+             </div>
            </div>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 
