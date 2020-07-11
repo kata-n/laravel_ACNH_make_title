@@ -7,15 +7,20 @@
 @import "layout/_container";
 @import "layout/_makerpage";
 @import "layout/_cardlistpage";
+@import "layout/_router";
+@import "layout/_titleautopage";
 
 //component
 @import "object/component/_selectbutton";
 @import "object/component/_twitterbutton";
 @import "object/component/_card";
 @import "object/component/_balloon";
+@import "object/component/_cardlistpage";
 
 //project
+@import "object/project/_titleautopage";
 @import "object/project/_container";
 @import "object/project/_makerpage";
+@import "object/project/_router";
 
 //utillity

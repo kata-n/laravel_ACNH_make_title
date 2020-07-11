@@ -1923,10 +1923,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1953,6 +1949,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -2016,7 +2013,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -2621,29 +2617,25 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "l-cardlistpage" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c(
-          "div",
-          { staticClass: "card" },
-          _vm._l(_vm.TitleDatas, function(TitleData) {
-            return _c("li", [
-              _c("p", [_vm._v("称号名")]),
-              _vm._v(
-                "\n            " +
-                  _vm._s(TitleData.maked_word) +
-                  "\n            "
-              ),
-              _c("a", { attrs: { href: "/title_cards/" + TitleData.id } }, [
-                _vm._v("くわしく")
+  return _c("div", { staticClass: "l-cardlist" }, [
+    _c(
+      "div",
+      { staticClass: "l-cardlist__panel" },
+      _vm._l(_vm.TitleDatas, function(TitleData) {
+        return _c("li", { staticClass: "c-cardlist__index" }, [
+          _c("a", { attrs: { href: "/title_cards/" + TitleData.id } }, [
+            _c("div", { staticClass: "c-panel__container" }, [
+              _c("p", { staticClass: "c-panel__title" }, [_vm._v("肩書き名")]),
+              _vm._v(" "),
+              _c("p", { staticClass: "c-panel__word" }, [
+                _vm._v(_vm._s(TitleData.maked_word))
               ])
             ])
-          }),
-          0
-        )
-      ])
-    ])
+          ])
+        ])
+      }),
+      0
+    )
   ])
 }
 var staticRenderFns = []
@@ -2668,47 +2660,54 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-md-8" }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _vm._v("Example Component")
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c("p", [_vm._v("自動生成した肩書き")]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.TitleCards.maked_word))])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c("p", [_vm._v("左側の肩書き情報")]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_left))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_sentence))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.Left_infos.get_method))])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _c("p", [_vm._v("みぎ側の肩書き情報")]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_right))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_sentence))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.Right_infos.get_method))])
-          ])
+  return _c("div", { staticClass: "l-titleauto p-titleauto" }, [
+    _c("div", { staticClass: "l-titleauto__panel p-titleauto__panel" }, [
+      _c("div", { staticClass: "p-titleauto__index" }, [
+        _c("div", { staticClass: "p-titleauto__header" }, [
+          _vm._v("肩書き情報")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "p-titleauto__sentence" }, [
+          _c("p", [_vm._v(_vm._s(_vm.TitleCards.maked_word))])
         ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("a", { attrs: { href: "/title_cards_list" } }, [_vm._v("もどる")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "p-titleauto__body" }, [
+        _c("div", { staticClass: "p-titleauto__left" }, [
+          _c("p", [_vm._v("左側の肩書き情報")]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_left))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_sentence))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.Left_infos.get_method))])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "p-titleauto__right" }, [
+          _c("p", [_vm._v("みぎ側の肩書き情報")]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_right))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_sentence))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.Right_infos.get_method))])
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("a", { attrs: { href: "/title_cards_list" } }, [_vm._v("もどる")])
+    ])
+  }
+]
 render._withStripped = true
 
 

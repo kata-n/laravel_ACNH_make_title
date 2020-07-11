@@ -1,20 +1,16 @@
 <template>
-    <div class="l-cardlistpage">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-
-                <li v-for="TitleData in TitleDatas">
-                <p>称号名</p>
-                {{ TitleData.maked_word }}
-                <a v-bind:href="'/title_cards/' + TitleData.id">くわしく</a>
-                </li>
-
-                </div>
-            </div>
-
-        </div>
+  <div class="l-cardlist">
+    <div class="l-cardlist__panel">
+      <li v-for="TitleData in TitleDatas" class="c-cardlist__index">
+        <a v-bind:href="'/title_cards/' + TitleData.id">
+          <div class="c-panel__container">
+            <p class="c-panel__title">肩書き名</p>
+            <p class="c-panel__word">{{ TitleData.maked_word }}</p>
+          </div>
+        </a>
+      </li>
     </div>
+  </div>
 </template>
 
 <script>

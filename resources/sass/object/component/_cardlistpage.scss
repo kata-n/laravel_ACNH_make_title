@@ -1,0 +1,33 @@
+.c {
+  &-cardlist {
+    &__index {
+      width: 25%;
+      list-style: none;
+      border-radius: 5px;
+    }
+    &__index:hover {
+      background-color: rgba(253, 234, 90, 0.8);
+      transition: .5s;
+    }
+    &__index a {
+      color: $IndexColor;
+    }
+  }
+  &-panel__title {
+    margin: $space_m 0;
+    font-size: $font-size_11px;
+  }
+  &-panel__word {
+    color: $Selectarrow;
+    letter-spacing: 1px;
+  }
+  &-panel__container {
+    margin-bottom: $space_m;
+    height: 100px;
+    padding: 0.2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #ccc;
+    margin: $space_s;
+  }
+}

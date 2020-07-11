@@ -1,0 +1,8 @@
+.l {
+  &-router {
+    height: $headerHeight;
+    padding-top: $space_m;
+    display: flex;
+    justify-content: center;
+  }
+}

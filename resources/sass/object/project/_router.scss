@@ -1,0 +1,21 @@
+.p {
+  &-router a {
+    display: block;
+    width: 12%;
+    color: $Blackcolor;
+    padding-top: 5px;
+    text-align: center;
+    margin: 0 $space_l;
+    text-decoration: none;
+    border: 1px solid $Blackcolor;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+  }
+  &-router a:hover {
+    background-color: #fcfbe7;
+    transition: .5s;
+  }
+}
+
+.router-link-exact-active {
+    background-color: #fcfbe7;
+}

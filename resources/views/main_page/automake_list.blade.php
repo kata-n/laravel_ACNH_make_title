@@ -7,16 +7,16 @@
 @section('content')
    <div class="l-container p-container">
     <div id="app">
-      <autotitlelist-component></autotitlelist-component>
+      <div class="l-router p-router">
+        <router-link to="/">つくる</router-link>
+        <router-link to="/title_cards_list">肩書きリスト</router-link>
+      </div>
+      <router-view/>
     </div>
   </div>
 @endsection
 
 
 @section('footer')
-      <div id="nav">
-        <router-link to="/">つくる</router-link>
-        <router-link to="/title_cards_list">肩書きリスト</router-link>
-      </div>
-      <router-view/>
+
 @endsection
