@@ -1,0 +1,37 @@
+.p {
+  &-titleauto {
+
+    &__panel {
+      background-color: #f4dfdf;
+      padding: $space_2l;
+    }
+    &__header {
+      font-size: $font-size_11px;
+    }
+    &__sentence {
+      font-size: $font-size_22px;
+      font-size: $space_s 0;
+    }
+    &__sentence p {
+      margin: $space_s 0;
+    }
+    &__body {
+      display: flex;
+      justify-content: center;
+    }
+    &__left,
+    &__right {
+      width: 50%;
+      margin: $space_s $space_l;
+    }
+    &__left {
+      background-color: $headerBgColor;
+    }
+    &__left p {
+      color: $Whitecoloer;
+    }
+    &__right {
+      background-color: $boxunderColor;
+    }
+  }
+}

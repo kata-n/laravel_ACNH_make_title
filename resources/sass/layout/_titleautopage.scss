@@ -1,12 +1,8 @@
 .l {
-  &-cardlist {
+  &-titleauto {
     max-width: $site-width;
     margin: 0 auto;
     overflow: hidden;
     padding-top: $space_xl;
-    &__panel {
-      display: flex;
-      flex-wrap: wrap;
-    }
   }
 }
