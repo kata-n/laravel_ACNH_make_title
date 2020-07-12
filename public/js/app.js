@@ -1979,6 +1979,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     idnum: String
@@ -2667,13 +2674,17 @@ var render = function() {
           _vm._v("肩書き情報")
         ]),
         _vm._v(" "),
+        _c("div", { staticClass: "p-titleauto__header" }, [
+          _vm._v("※Twitterでつぶやいた肩書きの情報です")
+        ]),
+        _vm._v(" "),
         _c("div", { staticClass: "p-titleauto__sentence" }, [
           _c("p", [_vm._v(_vm._s(_vm.TitleCards.maked_word))])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "p-titleauto__body" }, [
-        _c("div", { staticClass: "p-titleauto__left" }, [
+      _c("div", { staticClass: "p-titleauto__body l-titleauto__body" }, [
+        _c("div", { staticClass: "l-titleauto__left c-card__infoleft" }, [
           _c("p", [_vm._v("左側の肩書き情報")]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_left))]),
@@ -2683,7 +2694,7 @@ var render = function() {
           _c("p", [_vm._v(_vm._s(_vm.Left_infos.get_method))])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "p-titleauto__right" }, [
+        _c("div", { staticClass: "l-titleauto__right c-card__inforight" }, [
           _c("p", [_vm._v("みぎ側の肩書き情報")]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_right))]),
@@ -2694,7 +2705,11 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0)
+      _vm._m(0),
+      _vm._v(" "),
+      _c("a", { staticClass: "c-gotop__btn", attrs: { href: "/" } }, [
+        _vm._v("自分で作ってみる")
+      ])
     ])
   ])
 }
@@ -2704,7 +2719,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c("a", { attrs: { href: "/title_cards_list" } }, [_vm._v("もどる")])
+      _c(
+        "a",
+        { staticClass: "c-golist__btn", attrs: { href: "/title_cards_list" } },
+        [
+          _c("i", { staticClass: "fas fa-backward" }),
+          _vm._v("\n        もどる\n      ")
+        ]
+      )
     ])
   }
 ]

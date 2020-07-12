@@ -9,6 +9,9 @@
     &__select {
       display: flex;
       width: 90%;
+      @include mq(){
+        display: block;
+      }
     }
     &__leftarea,
     &__rightarea {
@@ -22,6 +25,9 @@
     &__result {
       padding: $space_m;
       width: 100%;
+      @include mq(){
+        width: 90%;
+      }
     }
   }
 }

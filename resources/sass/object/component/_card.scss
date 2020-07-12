@@ -2,7 +2,7 @@
   &-card {
     &__result {
       padding: 1.2em 0.5em;
-      margin: 2em 0;
+      margin: $space_xl 0;
       color: #565656;
       background: #ffeaea;
       box-shadow: 0px 0px 0px 10px #ffeaea;
@@ -73,6 +73,22 @@
     &__body p {
       letter-spacing: 1px;
       font-size: 1.1rem;
+    }
+    &__infoleft,
+    &__inforight {
+      padding: $space_m;
+      margin: $space_xl $space_m;
+      color: #565656;
+      border-radius: 8px;
+    }
+    &__infoleft {
+      background-color: $leftColor;
+    }
+    &__inforight {
+      background-color: $rightColor;
+    }
+    &__infoleft p {
+      color: $Whitecoloer;
     }
   }
 }
