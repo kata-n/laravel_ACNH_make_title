@@ -44,10 +44,10 @@ class TittleMakeController extends Controller
       "trim_user" => false,
     );
 
-    $params = array(
-      "status" => "今日の肩書き：".$title_word."              #どうぶつの森 #あつ森肩書きチャレンジ",
-      "trim_user" => false,
-    );
+//    $params = array(
+//      "status" => "今日の肩書き：".$title_word."              #どうぶつの森 #あつ森肩書きチャレンジ",
+//      "trim_user" => false,
+//    );
 
     //API実行
     $timeline = $twitter->post('statuses/update', $params);
