@@ -2,8 +2,10 @@
 ・HackMDに書きました
 <a href="https://hackmd.io/@hBl82jbKSMuxamyJ7qq1HQ/B1k0X-zCI" target=_blank>https://hackmd.io/@hBl82jbKSMuxamyJ7qq1HQ/B1k0X-zCI</a>
 
-・Twitterアカウント
+
+・運用Twitterアカウント
 https://twitter.com/WKengai2
+
 
 ### 前回までの製作から今回初めて取り入れたこと
 
