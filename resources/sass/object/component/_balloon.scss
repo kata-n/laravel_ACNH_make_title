@@ -52,6 +52,10 @@
       background-size: contain;
       vertical-align: middle;
       background-image: url('images/logo.png');
+      @include mq(){
+        width: 235px;
+        margin-left: 10%;
+      }
     }
   }
 }

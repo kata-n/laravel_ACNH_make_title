@@ -465,6 +465,12 @@ li {
   height: 150vh;
 }
 
+@media screen and (max-width: 476px) {
+  .l-makerpage {
+    height: 230vh;
+  }
+}
+
 .l-makerpage__outline {
   padding: 1rem;
 }
@@ -485,6 +491,14 @@ li {
 .l-makerpage__rightarea {
   width: 50%;
   padding: 1rem 0.5rem;
+}
+
+@media screen and (max-width: 476px) {
+  .l-makerpage__leftarea,
+  .l-makerpage__rightarea {
+    width: 100%;
+    padding: 1rem 0;
+  }
 }
 
 .l-makerpage__section {
@@ -541,6 +555,15 @@ li {
 .l-titleauto__right {
   width: 50%;
   margin: 0.5rem 1.5rem;
+}
+
+.l-footer {
+  background-color: #dce4e4;
+  height: 25px;
+  padding: 18px;
+  z-index: 9999;
+  text-align: center;
+  justify-content: space-around;
 }
 
 .c-select__wrapper {
@@ -638,6 +661,12 @@ li {
   border-radius: 8px;
 }
 
+@media screen and (max-width: 476px) {
+  .c-card__result {
+    margin: 2rem 0 2.5rem 0;
+  }
+}
+
 .c-card__top {
   color: gray;
   letter-spacing: 1px;
@@ -657,6 +686,13 @@ li {
   margin-top: 4rem;
 }
 
+@media screen and (max-width: 476px) {
+  .c-card__resultinfo {
+    margin-top: 0.5rem;
+    display: table-cell;
+  }
+}
+
 .c-card__rightinfo,
 .c-card__leftinfo {
   width: 50%;
@@ -666,6 +702,14 @@ li {
   box-shadow: 0 3px 6px #ccc;
   margin: 0.5rem;
   padding: 0 0 1.2rem 0;
+}
+
+@media screen and (max-width: 476px) {
+  .c-card__rightinfo,
+  .c-card__leftinfo {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
 }
 
 .c-card__lefthead,
@@ -797,10 +841,23 @@ li {
   background-image: url(/images/logo.png?522642285acf5c2966bec03fe4b3b5a2);
 }
 
+@media screen and (max-width: 476px) {
+  .c-balloon__sentence::before {
+    width: 235px;
+    margin-left: 10%;
+  }
+}
+
 .c-cardlist__index {
   width: 25%;
   list-style: none;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 476px) {
+  .c-cardlist__index {
+    width: 50%;
+  }
 }
 
 .c-cardlist__index:hover {
@@ -943,6 +1000,7 @@ li {
 @media screen and (max-width: 476px) {
   .p-makerpage__select {
     width: 80%;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -976,5 +1034,10 @@ li {
 
 .router-link-exact-active {
   background-color: #fcfbe7;
+}
+
+.p-footerabout,
+.p-footername {
+  font-size: 0.5rem;
 }
 

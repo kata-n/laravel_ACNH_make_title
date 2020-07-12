@@ -2724,7 +2724,7 @@ var staticRenderFns = [
         { staticClass: "c-golist__btn", attrs: { href: "/title_cards_list" } },
         [
           _c("i", { staticClass: "fas fa-backward" }),
-          _vm._v("\n        もどる\n      ")
+          _vm._v("\n        肩書き一覧へ\n      ")
         ]
       )
     ])

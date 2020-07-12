@@ -8,6 +8,9 @@
       box-shadow: 0px 0px 0px 10px #ffeaea;
       border: dashed 2px #ffc3c3;
       border-radius: 8px;
+      @include mq(){
+        margin: $space_xl 0 $space_2l 0;
+      }
     }
     &__top {
       color: gray;
@@ -23,6 +26,10 @@
       display: flex;
       width: 100%;
       margin-top: $space_4l;
+      @include mq(){
+        margin-top: $space_s;
+        display: table-cell;
+      }
     }
     &__rightinfo,
     &__leftinfo {
@@ -33,6 +40,10 @@
       box-shadow: 0 3px 6px #ccc;
       margin: $space_s;
       padding: 0 0 $space_xxm 0;
+      @include mq(){
+        width: 100%;
+        margin: 0 0 $space_m 0;
+      }
     }
     &__lefthead,
     &__righthead {

@@ -4,6 +4,9 @@
       width: 25%;
       list-style: none;
       border-radius: 5px;
+      @include mq(){
+        width: 50%;
+      }
     }
     &__index:hover {
       background-color: rgba(253, 234, 90, 0.8);

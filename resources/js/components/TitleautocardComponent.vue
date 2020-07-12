@@ -25,7 +25,7 @@
       <div>
         <a href="/title_cards_list" class="c-golist__btn">
           <i class="fas fa-backward"></i>
-          もどる
+          肩書き一覧へ
         </a>
       </div>
 
