@@ -1,0 +1,29 @@
+.c {
+  &-gotop {
+    &__btn {
+      background-color: $goTopColor;
+      color: $btnFontColor;
+      padding: $space_ss $space_xm;
+      width: 40%;
+      border: 1px solid $goTopColor;
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      @include mq(){
+        width: 80%;
+      }
+    }
+  }
+  &-golist {
+    &__btn {
+      padding: $space_ss $space_xm;
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+      margin-top: $space_m;
+      text-align: center;
+      color: $btnFontColor;
+    }
+  }
+}

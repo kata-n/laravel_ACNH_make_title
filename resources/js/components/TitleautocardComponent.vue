@@ -3,18 +3,19 @@
     <div class="l-titleauto__panel p-titleauto__panel">
       <div class="p-titleauto__index">
         <div class="p-titleauto__header">肩書き情報</div>
+        <div class="p-titleauto__header">※Twitterでつぶやいた肩書きの情報です</div>
         <div class="p-titleauto__sentence">
           <p>{{ TitleCards.maked_word }}</p>
         </div>
       </div>
-      <div class="p-titleauto__body">
-        <div class="p-titleauto__left">
+      <div class="p-titleauto__body l-titleauto__body">
+        <div class="l-titleauto__left c-card__infoleft">
           <p>左側の肩書き情報</p>
           <p>{{ Left_infos.word_left }}</p>
           <p>{{ Left_infos.word_sentence }}</p>
           <p>{{ Left_infos.get_method }}</p>
         </div>
-        <div class="p-titleauto__right">
+        <div class="l-titleauto__right c-card__inforight">
           <p>みぎ側の肩書き情報</p>
           <p>{{ Right_infos.word_right }}</p>
           <p>{{ Right_infos.word_sentence }}</p>
@@ -22,8 +23,14 @@
         </div>
       </div>
       <div>
-        <a href="/title_cards_list">もどる</a>
+        <a href="/title_cards_list" class="c-golist__btn">
+          <i class="fas fa-backward"></i>
+          もどる
+        </a>
       </div>
+
+      <a class="c-gotop__btn" href="/">自分で作ってみる</a>
+
     </div>
   </div>
 </template>

@@ -4,5 +4,14 @@
     margin: 0 auto;
     overflow: hidden;
     padding-top: $space_xl;
+    height: 100vh;
+    &__body {
+      margin-bottom: $space_m;
+    }
+    &__left,
+    &__right {
+      width: 50%;
+      margin: $space_s $space_l;
+    }
   }
 }

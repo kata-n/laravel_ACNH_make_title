@@ -9,6 +9,9 @@
     text-decoration: none;
     border: 1px solid $Blackcolor;
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    @include mq(){
+      width: 35%;
+    }
   }
   &-router a:hover {
     background-color: #fcfbe7;
