@@ -547,6 +547,12 @@ li {
   height: 100vh;
 }
 
+@media screen and (max-width: 476px) {
+  .l-titleauto {
+    height: 120vh;
+  }
+}
+
 .l-titleauto__body {
   margin-bottom: 1rem;
 }
@@ -555,6 +561,13 @@ li {
 .l-titleauto__right {
   width: 50%;
   margin: 0.5rem 1.5rem;
+}
+
+@media screen and (max-width: 476px) {
+  .l-titleauto__left,
+  .l-titleauto__right {
+    width: 80%;
+  }
 }
 
 .l-footer {
@@ -905,6 +918,7 @@ li {
 @media screen and (max-width: 476px) {
   .c-gotop__btn {
     width: 80%;
+    margin-bottom: 3rem;
   }
 }
 
@@ -921,6 +935,12 @@ li {
 .p-titleauto__panel {
   background-color: #f4fdf3;
   padding: 2.5rem;
+}
+
+@media screen and (max-width: 476px) {
+  .p-titleauto__panel {
+    padding: 1rem;
+  }
 }
 
 .p-titleauto__header {
@@ -942,6 +962,12 @@ li {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 476px) {
+  .p-titleauto__body {
+    display: block;
+  }
 }
 
 .p-container {
@@ -1000,6 +1026,7 @@ li {
 @media screen and (max-width: 476px) {
   .p-makerpage__select {
     width: 80%;
+    margin: 1.5rem auto;
     margin-bottom: 0.5rem;
   }
 }

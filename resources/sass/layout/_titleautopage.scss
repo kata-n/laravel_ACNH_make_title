@@ -5,6 +5,9 @@
     overflow: hidden;
     padding-top: $space_xl;
     height: 100vh;
+    @include mq(){
+      height: 120vh;
+    }
     &__body {
       margin-bottom: $space_m;
     }
@@ -12,6 +15,9 @@
     &__right {
       width: 50%;
       margin: $space_s $space_l;
+      @include mq(){
+        width: 80%;
+      }
     }
   }
 }
