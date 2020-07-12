@@ -4,6 +4,9 @@
     &__panel {
       background-color: #f4fdf3;
       padding: $space_2l;
+      @include mq(){
+        padding: $space_m;
+      }
     }
     &__header {
       font-size: $font-size_14px;
@@ -19,6 +22,9 @@
     &__body {
       display: flex;
       justify-content: center;
+      @include mq(){
+        display: block;
+      }
     }
   }
 }
