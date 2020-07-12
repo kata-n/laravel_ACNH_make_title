@@ -8,10 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="twitter:card" content="summary"/>
-    <meta property="og:title" content="あつ森 肩書きメーカー"/>
-    <meta property="og:description" content="あつまれどうぶつの森で設定できる「肩書き」を作ったり入手方法を知ることができるよ"/>
-    <meta property="og:image" content="{{ asset('images/top_view2.png') }}"/>
+    @yield('head_twitter')
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -21,10 +18,6 @@
 
   <body>
      <div class="l-contain">
-        <header class="l-header">
-        @section('header')
-        @show
-        </header>
 
         @yield('content')
 

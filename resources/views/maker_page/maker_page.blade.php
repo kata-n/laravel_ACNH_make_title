@@ -4,8 +4,11 @@
 
 @section('description','あつ森で設定できる肩書きを作成できるページ')
 
-@section('header')
-
+@section('head_twitter')
+    <meta name="twitter:card" content="summary"/>
+    <meta property="og:title" content="あつ森 肩書きメーカー"/>
+    <meta property="og:description" content="あつまれどうぶつの森で設定できる「肩書き」を作ったり入手方法を知ることができるよ"/>
+    <meta property="og:image" content="{{ asset('images/top_view2.png') }}"/>
 @endsection
 
 @section('content')

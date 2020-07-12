@@ -39,10 +39,10 @@ class TittleMakeController extends Controller
     );
 
     //クエリ設定
-//    $params = array(
-//      "status" => $title_word."    詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_cards/".$maked_data,
-//      "trim_user" => false,
-//    );
+    $params = array(
+      "status" => "今日の肩書き："$title_word."#どうぶつの森 #あつ森肩書きチャレンジ           詳しくみる：https://application-anch-tittlemaking.shikatana.com"."/title_cards/".$maked_data,
+      "trim_user" => false,
+    );
 
     $params = array(
       "status" => "今日の肩書き：".$title_word."              #どうぶつの森 #あつ森肩書きチャレンジ",
