@@ -29,7 +29,12 @@
         @yield('content')
 
         <footer class="l-footer">
-          @yield('footer')
+          <div class="p-footerabout">
+            Copyright kata. AlL Rights Reserved.
+          </div>
+          <div class="p-footername">
+            Twitter Account: <a href="{{ url('https://twitter.com/denknit')}}" target="_blank">anch private account</a>
+          </div>
         </footer>
      </div>
      <script src="{{ asset('js/app.js') }}" defer></script>

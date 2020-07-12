@@ -37,6 +37,7 @@
       }
       @include mq(){
         width: 80%;
+        margin-bottom: $space_s;
       }
     }
     &__result {
