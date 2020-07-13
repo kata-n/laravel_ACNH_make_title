@@ -616,6 +616,48 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => '週末の',
             'get_method' => 'カブ主様へ、ご優待マイル',
           ],
+          $words94 = [
+            'word_sentence' => '様子見中のギャンブラー',
+            'word_right' => 'ギャンブラー',
+            'word_left' => '様子見中の',
+            'get_method' => 'カブ・ドリーマーへの道',
+          ],
+          $words95 = [
+            'word_sentence' => '金欲の小金持ち',
+            'word_right' => '小金持ち',
+            'word_left' => '金欲の',
+            'get_method' => 'カブ・ドリーマーへの道',
+          ],
+          $words96 = [
+            'word_sentence' => '成金のトレーダー',
+            'word_right' => 'トレーダー',
+            'word_left' => '成金の',
+            'get_method' => 'カブ・ドリーマーへの道',
+          ],
+          $words97 = [
+            'word_sentence' => '世界のミリオネア',
+            'word_right' => 'ミリオネア',
+            'word_left' => '世界の',
+            'get_method' => 'カブ・ドリーマーへの道',
+          ],
+          $words98 = [
+            'word_sentence' => 'ローンの卒業生',
+            'word_right' => '卒業生',
+            'word_left' => 'ローンの',
+            'get_method' => '祝！ローン完済だなも！',
+          ],
+          $words99 = [
+            'word_sentence' => 'うわさ好きなインフルエンサー',
+            'word_right' => 'インフルエンサー',
+            'word_left' => 'うわさ好きな',
+            'get_method' => '掲示板でコミュニケーション',
+          ],
+          $words100 = [
+            'word_sentence' => '文系の女子（男子）',
+            'word_right' => '女子（男子）',
+            'word_left' => '文系の',
+            'get_method' => '掲示板でコミュニケーション',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);

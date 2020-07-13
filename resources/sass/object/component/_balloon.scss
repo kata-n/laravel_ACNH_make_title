@@ -54,7 +54,8 @@
       background-image: url('images/logo.png');
       @include mq(){
         width: 235px;
-        margin-left: 10%;
+        display: block;
+        margin: 0 auto;
       }
     }
   }
