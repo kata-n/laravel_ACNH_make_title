@@ -658,6 +658,36 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => '文系の',
             'get_method' => '掲示板でコミュニケーション',
           ],
+          $words101 = [
+            'word_sentence' => 'キレイ好きなチルドレン',
+            'word_right' => 'チルドレン',
+            'word_left' => 'キレイ好きな',
+            'get_method' => 'ノミをつかまえよう！',
+          ],
+          $words102 = [
+            'word_sentence' => '意識の高い綺麗好き',
+            'word_right' => '綺麗好き',
+            'word_left' => '意識の高い',
+            'get_method' => 'ノミをつかまえよう！',
+          ],
+          $words103 = [
+            'word_sentence' => '抜け殻の存在',
+            'word_right' => '存在',
+            'word_left' => '抜け殻の',
+            'get_method' => '夏の思い出ゲット！',
+          ],
+          $words104 = [
+            'word_sentence' => 'ハズさないスナイパー',
+            'word_right' => 'スナイパー',
+            'word_left' => 'ハズさない',
+            'get_method' => 'ハチとり名人！',
+          ],
+          $words105 = [
+            'word_sentence' => 'ちょいワルのトラブルメイカー',
+            'word_right' => 'トラブルメイカー',
+            'word_left' => 'ちょいワルの',
+            'get_method' => 'わるだくみ番長！',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
