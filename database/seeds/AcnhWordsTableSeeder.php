@@ -688,6 +688,36 @@ class AcnhWordsTableSeeder extends Seeder
             'word_left' => 'ちょいワルの',
             'get_method' => 'わるだくみ番長！',
           ],
+          $words106 = [
+            'word_sentence' => '泣きっ面の泣き虫',
+            'word_right' => '泣き虫',
+            'word_left' => '泣きっ面の',
+            'get_method' => '泣きっ面にハチの救済なんだも！',
+          ],
+          $words107 = [
+            'word_sentence' => '蘇った不死鳥',
+            'word_right' => '不死鳥',
+            'word_left' => '蘇った',
+            'get_method' => 'キケンなムシに、ご注意',
+          ],
+          $words108 = [
+            'word_sentence' => 'ワナにはまったうっかり者',
+            'word_right' => 'うっかり者',
+            'word_left' => 'ワナにはまった',
+            'get_method' => '落とし穴のワナだなも！',
+          ],
+          $words109 = [
+            'word_sentence' => '水もしたたるドジっ子',
+            'word_right' => 'ドジっ子',
+            'word_left' => '水もしたたる',
+            'get_method' => 'ウォーターハザード',
+          ],
+          $words110 = [
+            'word_sentence' => 'ゆるふわ系のパチンカー',
+            'word_right' => 'パチンカー',
+            'word_left' => 'ゆるふわ系の',
+            'get_method' => '狙え、バルーンハンター！',
+          ],
         ];
         foreach ($words as $word) {
         DB::table('words')->insert($word);
