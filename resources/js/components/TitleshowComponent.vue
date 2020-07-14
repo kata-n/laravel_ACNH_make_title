@@ -45,35 +45,37 @@
          </div>
       </div>
       <div class="l-makerpage__result p-makerpage__result">
-        <div v-show="showfade">
-          <div class="c-card__result">
-            <h4 class="c-card__top">作成した肩書き</h4>
-            <p class="c-card__title">{{ leftselected.title }}{{ rightselected.title}}</p>
-            <button @click="tweet" class="c-btn c-twitter__btn">
-              <i class="fab fa-twitter"></i>ツイートする
-            </button>
+         <transition>
+          <div v-show="showfade">
+            <div class="c-card__result">
+              <h4 class="c-card__top">作成した肩書き</h4>
+              <p class="c-card__title">{{ leftselected.title }}{{ rightselected.title}}</p>
+              <button @click="tweet" class="c-btn c-twitter__btn">
+                <i class="fab fa-twitter"></i>ツイートする
+              </button>
+            </div>
+            <div class="c-card__resultinfo">
+             <div class="c-card__leftinfo">
+               <div class="c-card__lefthead">
+                 <p>ひだり側</p>
+               </div>
+               <div class="c-card__body">
+                 <p>もともとの肩書き：{{ leftselected.sentence }}</p>
+                 <p>ゲット方法：{{ leftselected.get }}</p>
+               </div>
+             </div>
+             <div class="c-card__rightinfo">
+               <div class="c-card__righthead">
+                 <p>みぎ側</p>
+               </div>
+               <div class="c-card__body">
+                 <p>もともとの肩書き：{{ rightselected.sentence }}</p>
+                 <p>ゲット方法：{{ rightselected.get }}</p>
+               </div>
+             </div>
+            </div>
           </div>
-          <div class="c-card__resultinfo">
-           <div class="c-card__leftinfo">
-             <div class="c-card__lefthead">
-               <p>ひだり側</p>
-             </div>
-             <div class="c-card__body">
-               <p>もともとの肩書き：{{ leftselected.sentence }}</p>
-               <p>ゲット方法：{{ leftselected.get }}</p>
-             </div>
-           </div>
-           <div class="c-card__rightinfo">
-             <div class="c-card__righthead">
-               <p>みぎ側</p>
-             </div>
-             <div class="c-card__body">
-               <p>もともとの肩書き：{{ rightselected.sentence }}</p>
-               <p>ゲット方法：{{ rightselected.get }}</p>
-             </div>
-           </div>
-          </div>
-        </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -123,3 +125,22 @@
         }
     }
 </script>
+
+<style>
+/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */
+
+/* 表示アニメーションをする前のスタイル */
+.v-enter {
+  opacity: 0;
+}
+
+/* 表示アニメーション後のスタイル */
+.v-enter-to {
+  opacity: 1;
+}
+
+/* 表示アニメーション動作中のスタイル */
+.v-enter-active {
+  transition: all 500ms;
+}
+</style>

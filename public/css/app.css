@@ -452,7 +452,6 @@ li {
 .l-contain {
   min-height: 100%;
   height: auto !important;
-  height: 100%;
 }
 
 .l-container {
@@ -857,7 +856,8 @@ li {
 @media screen and (max-width: 476px) {
   .c-balloon__sentence::before {
     width: 235px;
-    margin-left: 10%;
+    display: block;
+    margin: 0 auto;
   }
 }
 
