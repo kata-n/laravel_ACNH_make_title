@@ -1986,6 +1986,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     idnum: String
@@ -3332,21 +3336,41 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "p-titleauto__body l-titleauto__body" }, [
         _c("div", { staticClass: "l-titleauto__left c-card__infoleft" }, [
-          _c("p", [_vm._v("左側の肩書き情報")]),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ひだり側の肩書き情報")
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_left))]),
           _vm._v(" "),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ゲットしたときの肩書き")
+          ]),
+          _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_sentence))]),
+          _vm._v(" "),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ゲット方法")
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Left_infos.get_method))])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "l-titleauto__right c-card__inforight" }, [
-          _c("p", [_vm._v("みぎ側の肩書き情報")]),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("みぎ側の肩書き情報")
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_right))]),
           _vm._v(" "),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ゲットしたときの肩書き")
+          ]),
+          _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_sentence))]),
+          _vm._v(" "),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ゲット方法")
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v(_vm._s(_vm.Right_infos.get_method))])
         ])
