@@ -101,5 +101,9 @@
     &__infoleft p {
       color: $Whitecoloer;
     }
+    &__labeltitle {
+      font-size: $font-size_14px;
+      margin-bottom: $space_ss;
+    }
   }
 }
