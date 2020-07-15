@@ -102,6 +102,11 @@
     }
     &__labeltitle {
       font-size: $font-size_14px;
+      margin-bottom: 0;
+    }
+    &__labelword {
+      font-size: $font-size_16px;
+      margin-top: $space_s;
       margin-bottom: $space_ss;
     }
   }
