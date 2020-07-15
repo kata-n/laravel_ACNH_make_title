@@ -793,6 +793,11 @@ li {
   color: #fff;
 }
 
+.c-card__labeltitle {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
 .c-balloon__title {
   position: relative;
   background-color: #ffc4c4;
