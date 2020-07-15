@@ -3340,19 +3340,25 @@ var render = function() {
             _vm._v("ひだり側の肩書き情報")
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_left))]),
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Left_infos.word_left))
+          ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labeltitle" }, [
             _vm._v("ゲットしたときの肩書き")
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.Left_infos.word_sentence))]),
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Left_infos.word_sentence))
+          ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labeltitle" }, [
             _vm._v("ゲット方法")
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.Left_infos.get_method))])
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Left_infos.get_method))
+          ])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "l-titleauto__right c-card__inforight" }, [
@@ -3360,19 +3366,25 @@ var render = function() {
             _vm._v("みぎ側の肩書き情報")
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_right))]),
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Right_infos.word_right))
+          ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labeltitle" }, [
             _vm._v("ゲットしたときの肩書き")
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.Right_infos.word_sentence))]),
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Right_infos.word_sentence))
+          ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labeltitle" }, [
             _vm._v("ゲット方法")
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v(_vm._s(_vm.Right_infos.get_method))])
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Right_infos.get_method))
+          ])
         ])
       ]),
       _vm._v(" "),

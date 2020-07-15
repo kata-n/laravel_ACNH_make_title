@@ -11,19 +11,19 @@
       <div class="p-titleauto__body l-titleauto__body">
         <div class="l-titleauto__left c-card__infoleft">
           <p class="c-card__labeltitle">ひだり側の肩書き情報</p>
-          <p>{{ Left_infos.word_left }}</p>
+          <p class="c-card__labelword">{{ Left_infos.word_left }}</p>
           <p class="c-card__labeltitle">ゲットしたときの肩書き</p>
-          <p >{{ Left_infos.word_sentence }}</p>
+          <p class="c-card__labelword">{{ Left_infos.word_sentence }}</p>
           <p class="c-card__labeltitle">ゲット方法</p>
-          <p>{{ Left_infos.get_method }}</p>
+          <p class="c-card__labelword">{{ Left_infos.get_method }}</p>
         </div>
         <div class="l-titleauto__right c-card__inforight">
           <p class="c-card__labeltitle">みぎ側の肩書き情報</p>
-          <p>{{ Right_infos.word_right }}</p>
+          <p class="c-card__labelword">{{ Right_infos.word_right }}</p>
           <p class="c-card__labeltitle">ゲットしたときの肩書き</p>
-          <p>{{ Right_infos.word_sentence }}</p>
+          <p class="c-card__labelword">{{ Right_infos.word_sentence }}</p>
           <p class="c-card__labeltitle">ゲット方法</p>
-          <p>{{ Right_infos.get_method }}</p>
+          <p class="c-card__labelword">{{ Right_infos.get_method }}</p>
         </div>
       </div>
       <div>
