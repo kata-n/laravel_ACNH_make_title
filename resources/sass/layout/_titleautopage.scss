@@ -17,6 +17,8 @@
       margin: $space_s $space_l;
       @include mq(){
         width: 80%;
+        display: block;
+        margin: $space_xl;
       }
     }
   }
