@@ -461,13 +461,7 @@ li {
 .l-makerpage {
   max-width: 980px;
   margin: 0 auto;
-  height: 160vh;
-}
-
-@media screen and (max-width: 476px) {
-  .l-makerpage {
-    height: auto;
-  }
+  min-height: calc(100vh - 100px);
 }
 
 .l-makerpage__outline {
@@ -843,6 +837,13 @@ li {
 
 .c-balloon__sentence {
   margin-left: 1rem;
+}
+
+@media screen and (max-width: 476px) {
+  .c-balloon__sentence {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .c-balloon__sentence p {

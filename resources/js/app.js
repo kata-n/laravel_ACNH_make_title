@@ -13,6 +13,8 @@ Vue.prototype.$http = axios;
 //router
 import router from './settings/router.js'
 
+//スムーススクロール
+import smoothscroll from 'smoothscroll-polyfill';
 
 /**
  * The following block of code may be used to automatically register your
