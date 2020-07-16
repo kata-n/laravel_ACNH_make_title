@@ -2137,7 +2137,7 @@ __webpack_require__.r(__webpack_exports__);
       var leftword = this.leftselected.title;
       var righttword = this.rightselected.title;
       var makedword = encodeURI(leftword + righttword);
-      open("https://twitter.com/intent/tweet?text=%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E8%82%A9%E6%9B%B8%E3%81%8D%EF%BC%9A" + makedword + "&url=https%3A%2F%2Fapplication-anch-tittlemaking.shikatana.com&hashtags=%E3%81%82%E3%81%A4%E6%A3%AE%E8%82%A9%E6%9B%B8%E3%81%8D%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC", "_blank");
+      open("https://twitter.com/intent/tweet?text=" + makedword + "&url=https%3A%2F%2Fapplication-anch-tittlemaking.shikatana.com&hashtags=%E3%81%82%E3%81%A4%E6%A3%AE%E8%82%A9%E6%9B%B8%E3%81%8D%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC", "_blank");
     },
     uptop: function uptop() {
       window.scrollTo({
@@ -19345,7 +19345,7 @@ Vue.prototype.$http = axios__WEBPACK_IMPORTED_MODULE_0___default.a; //router
  //スムーススクロール
 
 
-Vue.use(smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2___default.a);
+smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2___default.a.polyfill();
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

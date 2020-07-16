@@ -15,7 +15,7 @@
         width: 80%;
       }
     }
-    &__retry:hover {
+    &__retry:active {
       -webkit-transform: translateY(4px);
       transform: translateY(4px);/*下に動く*/
       box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/

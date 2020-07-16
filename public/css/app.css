@@ -963,7 +963,7 @@ li {
   }
 }
 
-.c-btn__retry:hover {
+.c-btn__retry:active {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
   /*下に動く*/
