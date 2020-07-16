@@ -2107,6 +2107,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2129,6 +2136,12 @@ __webpack_require__.r(__webpack_exports__);
       var righttword = this.rightselected.title;
       var makedword = encodeURI(leftword + righttword);
       open("https://twitter.com/intent/tweet?text=%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E8%82%A9%E6%9B%B8%E3%81%8D%EF%BC%9A" + makedword + "&url=https%3A%2F%2Fapplication-anch-tittlemaking.shikatana.com&hashtags=%E3%81%82%E3%81%A4%E6%A3%AE%E8%82%A9%E6%9B%B8%E3%81%8D%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC", "_blank");
+    },
+    uptop: function uptop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     }
   },
   computed: {
@@ -2159,7 +2172,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */\n\n/* 表示アニメーションをする前のスタイル */\n.v-enter {\n  opacity: 0;\n}\n\n/* 表示アニメーション後のスタイル */\n.v-enter-to {\n  opacity: 1;\n}\n\n/* 表示アニメーション動作中のスタイル */\n.v-enter-active {\n  -webkit-transition: all 500ms;\n  transition: all 500ms;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */\n\n/* 表示アニメーションをする前のスタイル */\n.v-enter {\n  opacity: 0;\n}\n\n/* 表示アニメーション後のスタイル */\n.v-enter-to {\n  opacity: 1;\n}\n\n/* 表示アニメーション動作中のスタイル */\n.v-enter-active {\n  -webkit-transition: all 500ms;\n  transition: all 500ms;\n}\n", ""]);
 
 // exports
 
@@ -3624,15 +3637,20 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "c-card__body" }, [
-                      _c("p", [
-                        _vm._v(
-                          "もともとの肩書き：" +
-                            _vm._s(_vm.leftselected.sentence)
-                        )
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("もともとの肩書き")
                       ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.leftselected.sentence))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("ゲット方法")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.leftselected.get))
                       ])
                     ])
                   ]),
@@ -3643,18 +3661,31 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "c-card__body" }, [
-                      _c("p", [
-                        _vm._v(
-                          "もともとの肩書き：" +
-                            _vm._s(_vm.rightselected.sentence)
-                        )
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("もともとの肩書き")
                       ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.rightselected.sentence))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("ゲット方法")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.rightselected.get))
                       ])
                     ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-btn__area" }, [
+                  _c(
+                    "a",
+                    { staticClass: "c-btn__retry", on: { click: _vm.uptop } },
+                    [_vm._v("作りなおす！")]
+                  )
                 ])
               ]
             )
@@ -3676,7 +3707,7 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "c-balloon__title" }, [
           _c("div", { staticClass: "c-balloon__sentence" }, [
-            _c("p", [_vm._v("の称号を使って、肩書きを作ってみよう！")])
+            _c("p", [_vm._v("の肩書きを作ってみよう！")])
           ])
         ])
       ]

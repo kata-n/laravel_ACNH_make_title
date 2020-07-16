@@ -4,7 +4,7 @@
       <div class="l-makerpage__toptitle p-makerpage__toptitle">
         <div class="c-balloon__title">
           <div class="c-balloon__sentence">
-            <p>の称号を使って、肩書きを作ってみよう！</p>
+            <p>の肩書きを作ってみよう！</p>
           </div>
         </div>
       </div>
@@ -60,8 +60,10 @@
                  <p>ひだり側</p>
                </div>
                <div class="c-card__body">
-                 <p>もともとの肩書き：{{ leftselected.sentence }}</p>
-                 <p>ゲット方法：{{ leftselected.get }}</p>
+                 <p class="c-card__labeltitle">もともとの肩書き</p>
+                 <p class="c-card__labelword">{{ leftselected.sentence }}</p>
+                 <p class="c-card__labeltitle">ゲット方法</p>
+                 <p class="c-card__labelword">{{ leftselected.get }}</p>
                </div>
              </div>
              <div class="c-card__rightinfo">
@@ -69,10 +71,15 @@
                  <p>みぎ側</p>
                </div>
                <div class="c-card__body">
-                 <p>もともとの肩書き：{{ rightselected.sentence }}</p>
-                 <p>ゲット方法：{{ rightselected.get }}</p>
+                 <p class="c-card__labeltitle">もともとの肩書き</p>
+                 <p class="c-card__labelword">{{ rightselected.sentence }}</p>
+                 <p class="c-card__labeltitle">ゲット方法</p>
+                 <p class="c-card__labelword">{{ rightselected.get }}</p>
                </div>
              </div>
+            </div>
+            <div class="c-btn__area">
+              <a class="c-btn__retry" @click="uptop">作りなおす！</a>
             </div>
           </div>
         </transition>
@@ -108,6 +115,12 @@
               "https://twitter.com/intent/tweet?text=%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E8%82%A9%E6%9B%B8%E3%81%8D%EF%BC%9A" + makedword + "&url=https%3A%2F%2Fapplication-anch-tittlemaking.shikatana.com&hashtags=%E3%81%82%E3%81%A4%E6%A3%AE%E8%82%A9%E6%9B%B8%E3%81%8D%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC",
               "_blank"
             );
+          },
+          uptop: function(){
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
           }
         },
 

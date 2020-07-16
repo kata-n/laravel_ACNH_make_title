@@ -1,0 +1,25 @@
+.c {
+  &-btn {
+    &__area {
+      margin: $space_l 0;
+    }
+    &__retry {
+      display: inline-block;
+      padding: $space_s $space_m;
+      text-decoration: none;
+      background: #668ad8;
+      color: $Whitecoloer;
+      border-bottom: solid 4px #627295;
+      border-radius: 3px;
+      @include mq(){
+        width: 80%;
+      }
+    }
+    &__retry:hover {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);/*下に動く*/
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+      border-bottom: none;
+    }
+  }
+}
