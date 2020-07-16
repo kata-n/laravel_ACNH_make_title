@@ -79,7 +79,7 @@
              </div>
             </div>
             <div class="c-btn__area">
-              <a class="c-btn__retry" href="">作りなおす！</a>
+              <a class="c-btn__retry" @click="uptop">作りなおす！</a>
             </div>
           </div>
         </transition>
@@ -115,6 +115,12 @@
               "https://twitter.com/intent/tweet?text=%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F%E8%82%A9%E6%9B%B8%E3%81%8D%EF%BC%9A" + makedword + "&url=https%3A%2F%2Fapplication-anch-tittlemaking.shikatana.com&hashtags=%E3%81%82%E3%81%A4%E6%A3%AE%E8%82%A9%E6%9B%B8%E3%81%8D%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC",
               "_blank"
             );
+          },
+          uptop: function(){
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
           }
         },
 

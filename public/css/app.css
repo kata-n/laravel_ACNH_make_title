@@ -461,7 +461,7 @@ li {
 .l-makerpage {
   max-width: 980px;
   margin: 0 auto;
-  height: 150vh;
+  height: 160vh;
 }
 
 @media screen and (max-width: 476px) {
@@ -945,16 +945,15 @@ li {
 }
 
 .c-btn__area {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .c-btn__retry {
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   background: #668ad8;
-  /*ボタン色*/
-  color: #FFF;
+  color: #fff;
   border-bottom: solid 4px #627295;
   border-radius: 3px;
 }

@@ -1,14 +1,14 @@
 .c {
   &-btn {
     &__area {
-      margin-top: $space_l;
+      margin: $space_l 0;
     }
     &__retry {
       display: inline-block;
-      padding: 0.5em 1em;
+      padding: $space_s $space_m;
       text-decoration: none;
-      background: #668ad8;/*ボタン色*/
-      color: #FFF;
+      background: #668ad8;
+      color: $Whitecoloer;
       border-bottom: solid 4px #627295;
       border-radius: 3px;
       @include mq(){
