@@ -2107,6 +2107,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2159,7 +2166,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */\n\n/* 表示アニメーションをする前のスタイル */\n.v-enter {\n  opacity: 0;\n}\n\n/* 表示アニメーション後のスタイル */\n.v-enter-to {\n  opacity: 1;\n}\n\n/* 表示アニメーション動作中のスタイル */\n.v-enter-active {\n  -webkit-transition: all 500ms;\n  transition: all 500ms;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */\n\n/* 表示アニメーションをする前のスタイル */\n.v-enter {\n  opacity: 0;\n}\n\n/* 表示アニメーション後のスタイル */\n.v-enter-to {\n  opacity: 1;\n}\n\n/* 表示アニメーション動作中のスタイル */\n.v-enter-active {\n  -webkit-transition: all 500ms;\n  transition: all 500ms;\n}\n", ""]);
 
 // exports
 
@@ -3624,15 +3631,20 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "c-card__body" }, [
-                      _c("p", [
-                        _vm._v(
-                          "もともとの肩書き：" +
-                            _vm._s(_vm.leftselected.sentence)
-                        )
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("もともとの肩書き")
                       ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("ゲット方法：" + _vm._s(_vm.leftselected.get))
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.leftselected.sentence))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("ゲット方法")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.leftselected.get))
                       ])
                     ])
                   ]),
@@ -3643,18 +3655,31 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "c-card__body" }, [
-                      _c("p", [
-                        _vm._v(
-                          "もともとの肩書き：" +
-                            _vm._s(_vm.rightselected.sentence)
-                        )
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("もともとの肩書き")
                       ]),
                       _vm._v(" "),
-                      _c("p", [
-                        _vm._v("ゲット方法：" + _vm._s(_vm.rightselected.get))
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.rightselected.sentence))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                        _vm._v("ゲット方法")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__labelword" }, [
+                        _vm._v(_vm._s(_vm.rightselected.get))
                       ])
                     ])
                   ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "c-btn__area" }, [
+                  _c(
+                    "a",
+                    { staticClass: "c-btn__retry", attrs: { href: "" } },
+                    [_vm._v("作りなおす！")]
+                  )
                 ])
               ]
             )
@@ -3676,7 +3701,7 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "c-balloon__title" }, [
           _c("div", { staticClass: "c-balloon__sentence" }, [
-            _c("p", [_vm._v("の称号を使って、肩書きを作ってみよう！")])
+            _c("p", [_vm._v("の肩書きを作ってみよう！")])
           ])
         ])
       ]

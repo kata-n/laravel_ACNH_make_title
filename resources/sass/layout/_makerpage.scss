@@ -4,7 +4,7 @@
     margin: 0 auto;
     height: 150vh;
       @include mq(){
-        height: 230vh;
+        height: auto;
       }
     &__outline {
       padding: $space_m;
