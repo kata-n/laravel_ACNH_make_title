@@ -19345,6 +19345,7 @@ Vue.prototype.$http = axios__WEBPACK_IMPORTED_MODULE_0___default.a; //router
  //スムーススクロール
 
 
+Vue.use(smoothscroll_polyfill__WEBPACK_IMPORTED_MODULE_2___default.a);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

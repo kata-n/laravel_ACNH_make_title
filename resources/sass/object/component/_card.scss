@@ -28,15 +28,14 @@
       margin-top: $space_4l;
       @include mq(){
         margin-top: $space_s;
-        display: table-cell;
+        display: block;
       }
     }
     &__rightinfo,
     &__leftinfo {
       width: 50%;
       margin-bottom: $space_xxs;
-      background-color: #fff;
-      border-radius: 6px;
+      background-color: $Whitecoloer;
       box-shadow: 0 3px 6px #ccc;
       margin: $space_s;
       padding: 0 0 $space_xxm 0;
@@ -58,7 +57,6 @@
       top: 0;
       right: 0;
       bottom: -270%;
-      border-radius: 6px;
       left: 0;
       background-color: #23b93c;
       transform-origin: bottom right;

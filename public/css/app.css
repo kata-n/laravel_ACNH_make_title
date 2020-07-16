@@ -697,7 +697,7 @@ li {
 @media screen and (max-width: 476px) {
   .c-card__resultinfo {
     margin-top: 0.5rem;
-    display: table-cell;
+    display: block;
   }
 }
 
@@ -706,7 +706,6 @@ li {
   width: 50%;
   margin-bottom: 0.9rem;
   background-color: #fff;
-  border-radius: 6px;
   box-shadow: 0 3px 6px #ccc;
   margin: 0.5rem;
   padding: 0 0 1.2rem 0;
@@ -734,7 +733,6 @@ li {
   top: 0;
   right: 0;
   bottom: -270%;
-  border-radius: 6px;
   left: 0;
   background-color: #23b93c;
   -webkit-transform-origin: bottom right;
