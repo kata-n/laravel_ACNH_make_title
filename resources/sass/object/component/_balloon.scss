@@ -34,6 +34,10 @@
     }
     &__sentence {
       margin-left: $space_m;
+      @include mq(){
+        display: block;
+        margin: 0 auto;
+      }
     }
     &__sentence p {
       display: inline-block;

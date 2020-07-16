@@ -2,10 +2,7 @@
   &-makerpage {
     max-width: $site-width;
     margin: 0 auto;
-    height: 160vh;
-      @include mq(){
-        height: auto;
-      }
+    min-height: calc(100vh - 100px);
     &__outline {
       padding: $space_m;
     }

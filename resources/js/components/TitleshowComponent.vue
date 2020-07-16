@@ -1,14 +1,15 @@
 <template>
   <div class="l-makerpage">
     <div class="l-makerpage__outline">
-      <div class="l-makerpage__toptitle p-makerpage__toptitle">
+       <div class="l-makerpage__setting">
+         <div class="l-makerpage__toptitle p-makerpage__toptitle">
         <div class="c-balloon__title">
           <div class="c-balloon__sentence">
             <p>の肩書きを作ってみよう！</p>
           </div>
         </div>
       </div>
-      <div class="l-makerpage__select p-makerpage__select">
+         <div class="l-makerpage__select p-makerpage__select">
          <div class="l-makerpage__leftarea p-makerpage__leftarea">
            <div class="l-makerpage__section">
              <div class="c-select__wrapper c-select__sell">
@@ -44,7 +45,8 @@
             </div>
          </div>
       </div>
-      <div class="l-makerpage__result p-makerpage__result">
+        </div>
+        <div class="l-makerpage__result p-makerpage__result">
          <transition>
           <div v-show="showfade">
             <div class="c-card__result">
