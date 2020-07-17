@@ -537,13 +537,7 @@ li {
   margin: 0 auto;
   overflow: hidden;
   padding-top: 2rem;
-  height: 100vh;
-}
-
-@media screen and (max-width: 476px) {
-  .l-titleauto {
-    height: 130vh;
-  }
+  min-height: calc(100vh - 100px);
 }
 
 .l-titleauto__body {
@@ -984,6 +978,7 @@ li {
 .p-titleauto__panel {
   background-color: #f4fdf3;
   padding: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 476px) {

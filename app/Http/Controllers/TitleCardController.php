@@ -15,9 +15,9 @@ class TitleCardController extends Controller
     //対応するIDの情報を取得する
     $TitleCards = Title_Card::find($id);
 
-    $Right_info = Makingtitle::find($TitleCards['word_right_id'],['word_sentence', 'word_right','get_method']);
+    $Right_info = Makingtitle::find($TitleCards['word_right_id'],['word_sentence', 'word_right','get_method','get_sentence']);
 
-    $Left_info = Makingtitle::find($TitleCards['word_left_id'],['word_sentence', 'word_left','get_method']);
+    $Left_info = Makingtitle::find($TitleCards['word_left_id'],['word_sentence', 'word_left','get_method','get_sentence']);
 
     //JSONでVueに渡す
     return ['TitleCardsData' => $TitleCards,
@@ -36,7 +36,7 @@ class TitleCardController extends Controller
 
     //JSONでVueに渡す
     return ['TitleListData' => $Titlelists];
-//    return view('main_page/automake_list',compact('titlelists'));
+
   }
 
   //自動生成した個別ページ

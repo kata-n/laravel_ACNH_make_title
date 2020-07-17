@@ -11,11 +11,10 @@ class User_Titlemaking_Controller extends Controller
     public function usermaiking()
     {
       //情報を取得する
-      $title_info = Makingtitle::select(['word_left','word_right', 'word_sentence', 'get_method'])->get();
+      $title_info = Makingtitle::select(['word_left','word_right', 'word_sentence', 'get_method', 'get_sentence'])->get();
 
       return $title_info;
 
-//      return ['TitleData' => $title_info];
 //      return response()->json(['results' => $title_info]);
 
     }

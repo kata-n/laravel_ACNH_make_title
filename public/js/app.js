@@ -1990,6 +1990,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     idnum: String
@@ -2024,6 +2028,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2174,7 +2184,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */\n\n/* 表示アニメーションをする前のスタイル */\n.v-enter {\n  opacity: 0;\n}\n\n/* 表示アニメーション後のスタイル */\n.v-enter-to {\n  opacity: 1;\n}\n\n/* 表示アニメーション動作中のスタイル */\n.v-enter-active {\n  -webkit-transition: all 500ms;\n  transition: all 500ms;\n}\n", ""]);
+exports.push([module.i, "\n.v-enter {\n  opacity: 0;\n}\n.v-enter-to {\n  opacity: 1;\n}\n.v-enter-active {\n  -webkit-transition: all 500ms;\n  transition: all 500ms;\n}\n\n", ""]);
 
 // exports
 
@@ -3809,11 +3819,19 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labeltitle" }, [
-            _vm._v("ゲット方法")
+            _vm._v("イベント名")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labelword" }, [
             _vm._v(_vm._s(_vm.Left_infos.get_method))
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ゲット方法")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Left_infos.get_sentence))
           ])
         ]),
         _vm._v(" "),
@@ -3835,11 +3853,19 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labeltitle" }, [
-            _vm._v("ゲット方法")
+            _vm._v("イベント名")
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "c-card__labelword" }, [
             _vm._v(_vm._s(_vm.Right_infos.get_method))
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "c-card__labeltitle" }, [
+            _vm._v("ゲット方法")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "c-card__labelword" }, [
+            _vm._v(_vm._s(_vm.Right_infos.get_sentence))
           ])
         ])
       ]),
@@ -3942,7 +3968,8 @@ var render = function() {
                               value: {
                                 title: TitleData.word_left,
                                 get: TitleData.get_method,
-                                sentence: TitleData.word_sentence
+                                sentence: TitleData.word_sentence,
+                                getmethod: TitleData.get_sentence
                               }
                             }
                           },
@@ -4009,7 +4036,8 @@ var render = function() {
                               value: {
                                 title: TitleData.word_right,
                                 get: TitleData.get_method,
-                                sentence: TitleData.word_sentence
+                                sentence: TitleData.word_sentence,
+                                getmethod: TitleData.get_sentence
                               }
                             }
                           },
@@ -4091,11 +4119,19 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "c-card__makerlabeltitle" }, [
-                        _vm._v("ゲット方法")
+                        _vm._v("イベント名")
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "c-card__makerlabelword" }, [
                         _vm._v(_vm._s(_vm.leftselected.get))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__makerlabeltitle" }, [
+                        _vm._v("ゲット方法")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__makerlabelword" }, [
+                        _vm._v(_vm._s(_vm.leftselected.getmethod))
                       ])
                     ])
                   ]),
@@ -4115,11 +4151,19 @@ var render = function() {
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "c-card__makerlabeltitle" }, [
-                        _vm._v("ゲット方法")
+                        _vm._v("イベント名")
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "c-card__makerlabelword" }, [
                         _vm._v(_vm._s(_vm.rightselected.get))
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__makerlabeltitle" }, [
+                        _vm._v("ゲット方法")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "c-card__makerlabelword" }, [
+                        _vm._v(_vm._s(_vm.rightselected.getmethod))
                       ])
                     ])
                   ])
