@@ -4082,19 +4082,19 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "c-card__body" }, [
-                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                      _c("p", { staticClass: "c-card__makerlabeltitle" }, [
                         _vm._v("もともとの肩書き")
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "c-card__labelword" }, [
+                      _c("p", { staticClass: "c-card__makerlabelword" }, [
                         _vm._v(_vm._s(_vm.leftselected.sentence))
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                      _c("p", { staticClass: "c-card__makerlabeltitle" }, [
                         _vm._v("ゲット方法")
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "c-card__labelword" }, [
+                      _c("p", { staticClass: "c-card__makerlabelword" }, [
                         _vm._v(_vm._s(_vm.leftselected.get))
                       ])
                     ])
@@ -4106,19 +4106,19 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "c-card__body" }, [
-                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                      _c("p", { staticClass: "c-card__makerlabeltitle" }, [
                         _vm._v("もともとの肩書き")
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "c-card__labelword" }, [
+                      _c("p", { staticClass: "c-card__makerlabelword" }, [
                         _vm._v(_vm._s(_vm.rightselected.sentence))
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "c-card__labeltitle" }, [
+                      _c("p", { staticClass: "c-card__makerlabeltitle" }, [
                         _vm._v("ゲット方法")
                       ]),
                       _vm._v(" "),
-                      _c("p", { staticClass: "c-card__labelword" }, [
+                      _c("p", { staticClass: "c-card__makerlabelword" }, [
                         _vm._v(_vm._s(_vm.rightselected.get))
                       ])
                     ])

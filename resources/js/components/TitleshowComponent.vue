@@ -62,10 +62,10 @@
                  <p>ひだり側</p>
                </div>
                <div class="c-card__body">
-                 <p class="c-card__labeltitle">もともとの肩書き</p>
-                 <p class="c-card__labelword">{{ leftselected.sentence }}</p>
-                 <p class="c-card__labeltitle">ゲット方法</p>
-                 <p class="c-card__labelword">{{ leftselected.get }}</p>
+                 <p class="c-card__makerlabeltitle">もともとの肩書き</p>
+                 <p class="c-card__makerlabelword">{{ leftselected.sentence }}</p>
+                 <p class="c-card__makerlabeltitle">ゲット方法</p>
+                 <p class="c-card__makerlabelword">{{ leftselected.get }}</p>
                </div>
              </div>
              <div class="c-card__rightinfo">
@@ -73,10 +73,10 @@
                  <p>みぎ側</p>
                </div>
                <div class="c-card__body">
-                 <p class="c-card__labeltitle">もともとの肩書き</p>
-                 <p class="c-card__labelword">{{ rightselected.sentence }}</p>
-                 <p class="c-card__labeltitle">ゲット方法</p>
-                 <p class="c-card__labelword">{{ rightselected.get }}</p>
+                 <p class="c-card__makerlabeltitle">もともとの肩書き</p>
+                 <p class="c-card__makerlabelword">{{ rightselected.sentence }}</p>
+                 <p class="c-card__makerlabeltitle">ゲット方法</p>
+                 <p class="c-card__makerlabelword">{{ rightselected.get }}</p>
                </div>
              </div>
             </div>

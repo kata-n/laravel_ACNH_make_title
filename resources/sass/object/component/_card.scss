@@ -80,8 +80,8 @@
       padding: $space_m;
     }
     &__body p {
-      letter-spacing: 1px;
-      font-size: 1.1rem;
+//      letter-spacing: 1px;
+//      font-size: 1.1rem;
     }
     &__infoleft,
     &__inforight {
@@ -106,6 +106,17 @@
       font-size: $font-size_16px;
       margin-top: $space_s;
       margin-bottom: $space_ss;
+    }
+    &__makerlabeltitle {
+      font-size: $font-size_14px;
+      margin-bottom: $space_s
+    }
+    &__makerlabelword {
+      font-size: $font-size_18px;
+      margin-top: $space_s;
+      margin-bottom: $space_ss;
+      font-weight: bold;
+      color: $MakerWordColor;
     }
   }
 }
