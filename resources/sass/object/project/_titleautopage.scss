@@ -4,6 +4,7 @@
     &__panel {
       background-color: #f4fdf3;
       padding: $space_2l;
+      margin-bottom: 1.5rem;
       @include mq(){
         padding: $space_m;
       }

@@ -19,7 +19,8 @@
                      v-bind:value="{
                      title: TitleData.word_left,
                      get: TitleData.get_method,
-                     sentence: TitleData.word_sentence
+                     sentence: TitleData.word_sentence,
+                     getmethod: TitleData.get_sentence
                      }">
                       {{ TitleData.word_left }}
                   </option>
@@ -36,7 +37,8 @@
                        v-bind:value="{
                        title: TitleData.word_right,
                        get: TitleData.get_method,
-                       sentence: TitleData.word_sentence
+                       sentence: TitleData.word_sentence,
+                       getmethod: TitleData.get_sentence
                        }">
                         {{ TitleData.word_right }}
                     </option>
@@ -64,8 +66,10 @@
                <div class="c-card__body">
                  <p class="c-card__makerlabeltitle">もともとの肩書き</p>
                  <p class="c-card__makerlabelword">{{ leftselected.sentence }}</p>
-                 <p class="c-card__makerlabeltitle">ゲット方法</p>
+                 <p class="c-card__makerlabeltitle">イベント名</p>
                  <p class="c-card__makerlabelword">{{ leftselected.get }}</p>
+                 <p class="c-card__makerlabeltitle">ゲット方法</p>
+                 <p class="c-card__makerlabelword">{{ leftselected.getmethod }}</p>
                </div>
              </div>
              <div class="c-card__rightinfo">
@@ -75,8 +79,10 @@
                <div class="c-card__body">
                  <p class="c-card__makerlabeltitle">もともとの肩書き</p>
                  <p class="c-card__makerlabelword">{{ rightselected.sentence }}</p>
-                 <p class="c-card__makerlabeltitle">ゲット方法</p>
+                 <p class="c-card__makerlabeltitle">イベント名</p>
                  <p class="c-card__makerlabelword">{{ rightselected.get }}</p>
+                 <p class="c-card__makerlabeltitle">ゲット方法</p>
+                 <p class="c-card__makerlabelword">{{ rightselected.getmethod }}</p>
                </div>
              </div>
             </div>
@@ -142,20 +148,17 @@
 </script>
 
 <style>
-/* 以下の v-enter, v-enter-to, v-enter-active がトランジションクラス */
 
-/* 表示アニメーションをする前のスタイル */
 .v-enter {
   opacity: 0;
 }
 
-/* 表示アニメーション後のスタイル */
 .v-enter-to {
   opacity: 1;
 }
 
-/* 表示アニメーション動作中のスタイル */
 .v-enter-active {
   transition: all 500ms;
 }
+
 </style>

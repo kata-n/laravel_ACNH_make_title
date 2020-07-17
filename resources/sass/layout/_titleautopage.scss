@@ -4,10 +4,7 @@
     margin: 0 auto;
     overflow: hidden;
     padding-top: $space_xl;
-    height: 100vh;
-    @include mq(){
-      height: 130vh;
-    }
+    min-height: calc(100vh - 100px);
     &__body {
       margin-bottom: $space_m;
     }
