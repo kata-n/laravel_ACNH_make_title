@@ -4,6 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use App\Title_Card;
 
 class Kernel extends ConsoleKernel
 {
@@ -28,12 +29,19 @@ class Kernel extends ConsoleKernel
         $schedule
         ->command('command:title_maiking')
         ->withoutOverlapping()
-        ->dailyAt('20:00');
+        ->hourlyAt(7);
 
         $schedule
         ->command('command:auto_retweet')
         ->withoutOverlapping()
         ->dailyAt('19:00');
+
+        //３日前のものはテーブルから削除する
+        $schedule
+        ->call(function(){
+          Title_Card::query()
+          ->where('created_at','<',date("Y-m-d", strtotime("-3 day")))->delete();
+        })->dailyAt('13:05');
 
     }
 
