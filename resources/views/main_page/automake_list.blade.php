@@ -8,7 +8,7 @@
     <meta name="twitter:card" content="summary"/>
     <meta property="og:title" content="肩書き"/>
     <meta property="og:description" content="あつまれどうぶつの森で設定できる「肩書き」を作ったり入手方法を知ることができるよ"/>
-    <meta property="og:image" content="{{ asset('images/twittericon.jpeg'') }}"/>
+    <meta property="og:image" content="{{ asset('images/twittericon.jpeg') }}"/>
 @endsection
 
 @section('content')
