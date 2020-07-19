@@ -872,12 +872,19 @@ class AcnhWordsTableSeeder extends Seeder
             'get_method' => '狙え、バルーンハンター！',
             'get_sentence' => '風船を100回撃ち落とす',
           ],
-          $words112 = [
+          $words113 = [
             'word_sentence' => '神出鬼没の風来坊',
             'word_right' => '風来坊',
             'word_left' => '神出鬼没の',
             'get_method' => '狙え、バルーンハンター！',
             'get_sentence' => '風船を300回撃ち落とす',
+          ],
+          $words114 = [
+            'word_sentence' => 'サクっと仕切り屋',
+            'word_right' => '仕切り屋',
+            'word_left' => 'サクっと',
+            'get_method' => '柵でお庭を作りませんか？',
+            'get_sentence' => '柵を20個建てる',
           ],
         ];
         foreach ($words as $word) {
