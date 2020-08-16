@@ -26,7 +26,7 @@
             Copyright kata. AlL Rights Reserved.
           </div>
           <div class="p-footername">
-            Twitter Account: <a href="{{ url('https://twitter.com/denknit')}}" target="_blank">anch private account</a>
+            Twitter Account: <a href="{{ url('https://twitter.com/WKengai2')}}" target="_blank">anch private account</a>
           </div>
         </footer>
      </div>
