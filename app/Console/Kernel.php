@@ -29,7 +29,7 @@ class Kernel extends ConsoleKernel
         $schedule
         ->command('command:title_maiking')
         ->withoutOverlapping()
-        ->hourlyAt(7);
+        ->twiceDaily(18, 21);
 
         $schedule
         ->command('command:auto_retweet')
