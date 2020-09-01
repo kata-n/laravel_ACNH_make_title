@@ -36,12 +36,12 @@ class Kernel extends ConsoleKernel
         ->withoutOverlapping()
         ->dailyAt('19:00');
 
-        //３日前のものはテーブルから削除する
+        //1ヶ月前のものはテーブルから削除する
         $schedule
         ->call(function(){
           Title_Card::query()
-          ->where('created_at','<',date("Y-m-d", strtotime("-3 day")))->delete();
-        })->dailyAt('13:05');
+          ->where('created_at','<',date("Y-m-d", strtotime("-30 day")))->delete();
+        })->monthly('13:05');
 
     }
 
