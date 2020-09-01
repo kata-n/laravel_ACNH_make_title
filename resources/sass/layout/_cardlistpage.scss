@@ -3,6 +3,7 @@
     max-width: $site-width;
     margin: 0 auto;
     overflow: hidden;
+    min-height: calc(100vh - 90px);
     padding-top: $space_xl;
     &__panel {
       display: flex;
